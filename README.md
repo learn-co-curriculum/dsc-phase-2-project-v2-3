@@ -8,11 +8,11 @@ All that remains in Phase 2 is to put our newfound data science skills to use wi
 
 ## Project Overview
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county. 
+For this project, you will use regression modeling to analyze house sales in a northwestern county.
 
 ### The Data
 
-For this project you will use the King County House Sales dataset, which can be found in the file `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in the `column_names.md` file in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
 
 It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
 
@@ -29,7 +29,9 @@ It is up to you to decide what data from this dataset to use and how to use it. 
 
 ### Business Problem
 
-For this project, it will be up to you to define a stakeholder and business problem appropriate to this dataset. If you are feeling overwhelmed or behind, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+It is up to you to define a stakeholder and business problem appropriate to this dataset.
+
+If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
 ## Deliverables
 
@@ -56,7 +58,7 @@ Keep in mind that the audience for these deliverables is not only your teacher, 
 
 ## Getting Started
 
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset. 
+Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
 
 We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
 
