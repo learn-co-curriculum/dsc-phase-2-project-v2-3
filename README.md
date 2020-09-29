@@ -27,7 +27,7 @@ For this project, you'll be working with the King County House Sales dataset. We
 
 The description of the column names can be found in the `column_names.md` file in the data folder in this repo. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 2 Code Challenge), we recommend you ignore the following features:
+It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore the following features:
 
 * date
 * view
@@ -70,7 +70,7 @@ Your Jupyter Notebook is the primary source of information about your analysis. 
 
 ### Non-Technical Presentation
 
-Your non-technical presentation is your opportunity to communicate clearly and concisely about your project and it's real-world relevance. The target audience should be people with limited technical knowledge who may be interested in leveraging your project. For Phase 1, these would be Microsoft executives interested in making decisions about movie development. We recommend using Google Slides, PowerPoint or Keynote to create your presentation slides.
+Your non-technical presentation is your opportunity to communicate clearly and concisely about your project and it's real-world relevance. The target audience should be people with limited technical knowledge who may be interested in leveraging your project.  We recommend using Google Slides, PowerPoint or Keynote to create your presentation slides.
 
 **Based on the results of your models, your presentation should discuss at least two features that highly influence housing prices.**
 
@@ -78,16 +78,12 @@ Your non-technical presentation is your opportunity to communicate clearly and c
 
 Please start by reviewing this document. If you have any questions, please ask your instructor ASAP.
 
-Start on this project by forking [the Phase 2 Project Repository][], cloning it locally, and working in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+Start on this project by forking [the Phase 2 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-2-project), cloning it locally, and working in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 
 ## Project Submission and Review
 
-Review [the Phase Project Submission and Review guidance][] to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
 
 ## Summary
 
 This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
-
-[the Phase 2 Project Repository]: https://github.com/learn-co-curriculum/dsc-phase-2-project-campus
-[instructions here]: https://support.zoom.us/hc/en-us/articles/201362473-Local-recording
-[the Phase Project Submission and Review guidance]: https://github.com/learn-co-curriculum/dsc-project-submissions-campus
