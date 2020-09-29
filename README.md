@@ -39,6 +39,8 @@ There are three deliverables for this project:
 2. A **Jupyter Notebook**
 3. A **non-technical presentation**
 
+### Creating High-Quality Deliverables
+
 Review the following resources to learn what makes for good deliverables that meet Flatiron School project requirements:
 
 * **The "Project Submission & Review" page in the "Milestones Instructions" topic** provides instructions for creating and submitting your deliverables.
