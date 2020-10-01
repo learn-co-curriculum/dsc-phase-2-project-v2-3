@@ -37,9 +37,9 @@ If you are struggling to define a stakeholder, we recommend you complete a proje
 
 There are three deliverables for this project:
 
-1. A **GitHub repository**
-2. A **Jupyter Notebook**
-3. A **non-technical presentation**
+* A **GitHub repository**
+* A **Jupyter Notebook**
+* A **non-technical presentation**
 
 ### Creating High-Quality Deliverables
 
@@ -51,6 +51,8 @@ Review the following resources to learn what makes for good deliverables that me
 Keep in mind that the audience for these deliverables is not only your teacher, but also potential employers. Employers will look at your project deliverables to evaluate multiple skills, including coding, modeling, communication, and domain knowledge. You will want to polish these as much as you can, both during the course and afterwards.
 
 ### Key Points
+
+* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
 
 * **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
 
