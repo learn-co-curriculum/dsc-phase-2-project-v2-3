@@ -41,14 +41,7 @@ There are three deliverables for this project:
 * A **Jupyter Notebook**
 * A **non-technical presentation**
 
-### Creating High-Quality Deliverables
-
-Review the following resources to learn what makes for good deliverables that meet Flatiron School project requirements:
-
-* **The "Project Submission & Review" page in the "Milestones Instructions" topic** provides instructions for creating and submitting your deliverables.
-* **The rubric associated with this assignment** provides specifications describing high-quality deliverables.
-
-Keep in mind that the audience for these deliverables is not only your teacher, but also potential employers. Employers will look at your project deliverables to evaluate multiple skills, including coding, modeling, communication, and domain knowledge. You will want to polish these as much as you can, both during the course and afterwards.
+Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
 
 ### Key Points
 
