@@ -271,6 +271,8 @@ Does not build multiple linear regression models
 
 Please start by reviewing the contents of this project description. If you have any questions, please ask your instructor ASAP.
 
+Next, you will need to complete the [***Project Proposal***](#project_proposal) which must be reviewed by your instructor before you can continue with the project.
+
 Here are some suggestions for creating your GitHub repository:
 
 1. Fork the [Phase 2 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-2-project-v2-3), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
