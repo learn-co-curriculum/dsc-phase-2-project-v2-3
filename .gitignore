@@ -4,6 +4,5 @@ __pycache__
 *.db
 *.pytest_cache
 README.ipynb
-draft_notebook.ipynb
 github.pdf
 stuff_to_ignore
