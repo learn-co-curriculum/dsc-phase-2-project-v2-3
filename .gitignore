@@ -4,5 +4,6 @@ __pycache__
 *.db
 *.pytest_cache
 README.ipynb
+King_County_analysis.pdf
 github.pdf
 stuff_to_ignore
