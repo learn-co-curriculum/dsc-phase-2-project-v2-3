@@ -23,15 +23,20 @@ I used multiple linear regression after testing and cleaning the data. The clean
 ## Results
 
 ### Baseline Model
+![](baseline_heat.png)
+![](baseline_qq)
 
 The baseline model’s high R squared and low p -value showed that there is a relationship between `price` and `sqft_living`. However this model is inconclusive because there is not enough data and sqft_living is too highly correlated with the other predictors  
 
 ### First Model
+![](first_scatter.png)
+![](first_qq.png)
 
 The first model has a high R-squared of 0.891 and low p-values on most of the predictors. Tjis ,odel is also fairly inconclusive because the model's scatter plot is too heteroscedastic and the Q-Q plot shows that the data is still not normally distributed.
 
 ### Final Model
-
+![](final_qq.png)
+![](fial_scatter.png)
 On the final model the R-squared score dropped to 0.650 but almost all the predictors have a low p-value. The Q-Q plot shows the model is normally distributed and the scatter plot shows the data is heteroscedastic. 
 
 ## Conclusions
@@ -48,6 +53,6 @@ Additional analysis could provide further insights into how to improve likelihoo
 
 Too many columns deal with factors that can’t be changed I would suggest building a regression model only out of columns with data that can be renovated. If I had more time I would also remove outliers to reduce error and get a more homoscedadtic model.
 ## For More Information
-See the full anaysis in the [Jupyter Notebook]() or review the [presentation]().
+See the full anaysis in the [Jupyter Notebook](https://github.com/kreggthegoat/dsc-phase-2-project) or review the [presentation](https://docs.google.com/presentation/d/1Mva7ee4uyrx2nWA2A2BdbvN_z8NEzxPM5doaBZ0TjTk/edit?usp=sharing).
 
 ## Thank You
