@@ -27,17 +27,17 @@ I used multiple linear regression after testing and cleaning the data. The clean
 The baseline model’s high R squared and low p -value showed that there is a relationship between `price` and `sqft_living`. However this model is inconclusive because there is not enough data and sqft_living is too highly correlated with the other predictors  
 
 ### First Model
-![](images/images/images/images/first_scatter.png)
+![](images/first_scatter.png)
 
-![](images/images/images/first_qq.png)
+![](images/first_qq.png)
 
 The first model has a high R-squared of 0.891 and low p-values on most of the predictors. Tjis ,odel is also fairly inconclusive because the model's scatter plot is too heteroscedastic and the Q-Q plot shows that the data is still not normally distributed.
 
 ### Final Model
 
-![](images/images/final_qq.png)
+![](images/final_qq.png)
 
-![](images/fial_scatter.png)
+![](images/final_scatter.png)
 
 On the final model the R-squared score dropped to 0.650 but almost all the predictors have a low p-value. The Q-Q plot shows the model is normally distributed and the scatter plot shows the data is heteroscedastic. 
 
