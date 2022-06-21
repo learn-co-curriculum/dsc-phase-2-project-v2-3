@@ -1,4 +1,4 @@
-# Phase 2 Project : Kansas City House Data Analysis
+# Phase 2 Project : King County House Data Analysis
 
 Author: Kregg Jackson
 
