@@ -8,6 +8,7 @@ For this project I used multiple linear regression modeling to analyze house sal
 
 ## Business Problem
 
+King County house renovators want to know what features have the strongest effect on sale. This project is designed to assist King County renovators by finding which elements of a house have the greatest impace on sale price.
 
 ## The Data
 
