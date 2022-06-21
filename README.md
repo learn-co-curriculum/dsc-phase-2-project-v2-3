@@ -4,7 +4,7 @@ Author: Kregg Jackson
 
 ## Project Overview
 
-For this project I used multiple linear regression modeling to analyze house sales in Kansas City, Missouri.
+For this project I used multiple linear regression modeling to analyze house sales in King County.
 
 ## Business Problem
 
@@ -31,7 +31,7 @@ The baseline model’s high R squared and low p -value showed that there is a re
 
 ![](images/first_qq.png)
 
-The first model has a high R-squared of 0.891 and low p-values on most of the predictors. Tjis ,odel is also fairly inconclusive because the model's scatter plot is too heteroscedastic and the Q-Q plot shows that the data is still not normally distributed.
+The first model has a high R-squared of 0.891 and low p-values on most of the predictors. This model is also fairly inconclusive because the model's scatter plot is too heteroscedastic and the Q-Q plot shows that the data is still not normally distributed.
 
 ### Final Model
 
