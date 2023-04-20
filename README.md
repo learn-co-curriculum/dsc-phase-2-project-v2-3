@@ -6,7 +6,7 @@
     • Leornard Rotich
     • Brian Kabugih
 
-![DALL·E 2023-04-19 05.32.45](https://github.com/WinnieKabuya/dsc-phase-2-project-v2-3/blob/main/DALL%C2%B7E%202023-04-19%2005.32.45%20-%20picture%20of%20housing%20estates%20in%20the%20US.png) - picture of housing estates in the US.png
+![DALL·E 2023-04-19 05.32.45](https://github.com/WinnieKabuya/dsc-phase-2-project-v2-3/blob/main/DALL%C2%B7E%202023-04-19%2005.32.45%20-%20picture%20of%20housing%20estates%20in%20the%20US.png) 
 
 ## Project Overview
 
@@ -66,9 +66,17 @@ Based on the questions you provided, here are some possible answers that the exp
     Certain factors are more strongly correlated with the sale price of a house than others. For example, the size of the house (measured in square feet) may be strongly correlated with the sale price, with larger houses selling for higher prices. Other factors that may be strongly correlated with price include the location of the house (e.g., proximity to schools or public transportation), the number of bedrooms and bathrooms, and the condition of the house.
 
   ## Modeling and Predictions
-  ![OLS regression results.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/OLS%20regression%20results.png)
-  ![Residual QQ plot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20QQ%20plot%20output.png)
-  ![Residual scatterplot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20scatterplot%20output.png)
+  !https://github.com/WinnieKabuya/dsc-phase-2-project-v2-3/blob/main/Ols%20regression.png
+  
+Overall the model performed marginally better. We were off by about 149171 rather than 173560 in a given prediction, and explained 62.9% rather than 49.2% of the variance in price.
+  
+  !https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20QQ%20plot%20output.png[Residual QQ plot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20QQ%20plot%20output.png)
+  
+  Since almost all of the data points fall along a straight line in this QQ-plot, we can consider the normality assumption satisfied.
+ 
+  ![[Residual scatterplot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20scatterplot%20output.png)](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20scatterplot%20output.png)
+  
+The scatterplot appears to show a roughly symmetrical and consistent spread of the residuals around the lowess regression line, suggesting that the homoscedasticity assumption is met for the Model.
 
   **Regression results**
 
