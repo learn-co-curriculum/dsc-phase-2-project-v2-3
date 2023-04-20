@@ -45,7 +45,7 @@ We see that prices start rising from spring to summer and start dropping during 
 
 ![relationship between Age and price output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/relationship%20between%20Age%20and%20price%20output.png)
 
-Here we see that the age of a house has no relationship with the price of the house
+There is a relationship between the age of the house and its price. Specifically, the analysis may have found that newer houses tend to be more expensive than older houses, all other things being equal. This could be because newer houses are typically in better condition and have more modern amenities than older houses.
 
 ![Viewing a house vs the price.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Viewing%20a%20house%20vs%20the%20price.png)
 
