@@ -6,7 +6,7 @@
     • Leornard Rotich
     • Brian Kabugih
 
-!DALL·E 2023-04-19 05.32.45 - picture of housing estates in the US.png
+![DALL·E 2023-04-19 05.32.45](https://github.com/WinnieKabuya/dsc-phase-2-project-v2-3/blob/main/DALL%C2%B7E%202023-04-19%2005.32.45%20-%20picture%20of%20housing%20estates%20in%20the%20US.png) - picture of housing estates in the US.png
 
 ## Project Overview
 
