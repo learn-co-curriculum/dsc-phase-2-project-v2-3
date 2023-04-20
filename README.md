@@ -47,7 +47,7 @@ We see that prices start rising from spring to summer and start dropping during 
 
 Here we see that the age of a house has no relationship with the price of the house
 
-!]Viewing a house vs the price.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Viewing%20a%20house%20vs%20the%20price.png)
+![Viewing a house vs the price.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Viewing%20a%20house%20vs%20the%20price.png)
 
 Also in the above plot we see that the number of times a house was viewed may have increased the proce of the house since the number of views means potential customers and increases the chances of the house being sold compared to the houses with little or no views.
 
