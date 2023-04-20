@@ -39,15 +39,15 @@ The exploratory data analysis(EDA) sought answers to the following questions:
 
 This picture shows the home sale prices within our first time home buyers criteria by the season the house was sold. The seasons are split between spring , summer , fall  and winter. 
 
-!seasons output.png
+![seasons output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/seasons%20output.png)
 
 We see that prices start rising from spring to summer and start dropping during summer to spring
 
-!relationship between Age and price output.png
+![relationship between Age and price output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/relationship%20between%20Age%20and%20price%20output.png)
 
 Here we see that the age of a house has no relationship with the price of the house
 
-!Viewing a house vs the price.png
+!]Viewing a house vs the price.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Viewing%20a%20house%20vs%20the%20price.png)
 
 Also in the above plot we see that the number of times a house was viewed may have increased the proce of the house since the number of views means potential customers and increases the chances of the house being sold compared to the houses with little or no views.
 
@@ -66,9 +66,9 @@ Based on the questions you provided, here are some possible answers that the exp
     Certain factors are more strongly correlated with the sale price of a house than others. For example, the size of the house (measured in square feet) may be strongly correlated with the sale price, with larger houses selling for higher prices. Other factors that may be strongly correlated with price include the location of the house (e.g., proximity to schools or public transportation), the number of bedrooms and bathrooms, and the condition of the house.
 
   ## Modeling and Predictions
-  !OLS regression results.png
-  !Residual QQ plot output.png
-  !Residual scatterplot output.png
+  ![OLS regression results.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/OLS%20regression%20results.png)
+  ![Residual QQ plot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20QQ%20plot%20output.png)
+  ![Residual scatterplot output.png](https://github.com/Leon380/dsc-phase-2-project-v2-3/blob/main/Residual%20scatterplot%20output.png)
 
   **Regression results**
 
