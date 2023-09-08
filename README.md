@@ -38,12 +38,10 @@ The model's performance hinges on two key metrics: Root Mean Square Error (RMSE)
 7,967. Living area positively influences prices, with each additional square foot resulting in an increase of approximately 
 2,096. The Random Forest model bolsters accuracy, yielding a lower RMSE of about 91,818, indicating enhanced predictive capability.
 
-## conclusion
-
-
 ## Limitations and Recommendations:
 
-For a data science audience, it is crucial to acknowledge potential limitations. Assumptions inherent in linear regression may not perfectly align with the intricate dynamics of the real estate market. Outliers and influential data points could potentially skew results, warranting vigilant consideration. To augment the model's efficacy, stakeholders should supplement it with expert judgment and market awareness. While the model excels at providing price ranges, it does not encompass broader market trends or unforeseen external influences. Therefore, an iterative approach involving an expanded dataset and exploration of advanced modeling techniques, such as Random Forest Regressors, will refine the model's accuracy and applicability in real-world scenarios.
+For a data science audience, it is crucial to acknowledge potential limitations. Assumptions inherent in linear regression may not perfectly align with the intricate dynamics of the real estate market. Outliers and influential data points could potentially skew results, warranting vigilant consideration. 
+To augment the model's efficacy, stakeholders should supplement it with expert judgment and market awareness. While the model excels at providing price ranges, it does not encompass broader market trends or unforeseen external influences. Therefore, an iterative approach involving an expanded dataset and exploration of advanced modeling techniques, such as Random Forest Regressors, will refine the model's accuracy and applicability in real-world scenarios.
 
 ## Next Steps
 More research is required to have a more integrated and informative dataset finding more factors that influence the price.
