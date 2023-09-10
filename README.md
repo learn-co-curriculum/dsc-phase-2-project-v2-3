@@ -1,17 +1,10 @@
-# Phase 2 Project Description
+# Phase 2 Project For Group 7
 
-Another module down - you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-v2-3/main/halfway-there.gif)
-
-All that remains in Phase 2 is to put your newfound data science skills to use with a large project!
-
-In this project description, we will cover:
-
-* Project Overview: the project goal, audience, and dataset
-* Deliverables: the specific items you are required to produce for this project
-* Grading: how your project will be scored
-* Getting Started: guidance for how to begin working
+The following are the group members that completed the project
+* Abdihakim S Mohamed
+* Jennifer Njeri
+* Caleb Ochieng
+* Bedan Njoroge
 
 ## Project Overview
 
@@ -25,59 +18,30 @@ If you are struggling to define a stakeholder, we recommend you complete a proje
 
 ### The Data
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this assignment's GitHub repository. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+The data in this project comes from King County of Washington State. The county includes both Seattle and Bellevue, so we're looking at a large number of houses - over 21K. The dependent variable in this analysis will be home prices.
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you **ignore** some or all of the following features:
+To help predict the price, we will be using the following explanatory variables:
 
-* `date`
-* `view`
-* `sqft_above`
-* `sqft_basement`
-* `yr_renovated`
-* `zipcode`
-* `lat`
-* `long`
-* `sqft_living15`
-* `sqft_lot15`
+* Rooms
+* Square footage in each house, and the square footage of the houses' 15 closest neighbors
+* Year built
+* Year renovated (if applicable)
+* Condition (overall condition of the house)
+* Grade (overall grade given to each house by the King County Grading System)
+* Zipcode
+* Latitude and longitude
+* Using these variables, and others we create, we will attempt to create a quality model (defined by satisfying the assumptions of linear regression, a high R2, and a low root mean squared error) that can accurately predict the price of a house and also provide clarity into how different variables affect the price.
 
-### Key Points
 
-* **Your goal in regression modeling is to yield findings to support relevant recommendations. Those findings should include a metric describing overall model performance as well as at least two regression model coefficients.** As you explore the data and refine your stakeholder and business problem definitions, make sure you are also thinking about how a linear regression model adds value to your analysis. "The assignment was to use linear regression" is not an acceptable answer! You can also use additional statistical techniques other than linear regression, so long as you clearly explain why you are using each technique.
 
-* **You should demonstrate an iterative approach to modeling.** This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
+### Method
+Our data frame starts has 21,597 pieces of data. We cleaned the data accordingly, taking out null values when necessary and dropping irrelevant columns. Once our data frame was complete, we performed log transformations, standardization, and normalization techniques to get more accurate coefficients. We tested for multicollinearity in order to remove features that overlapped. Afterward, we built our model, reflected on the results, and made adjustments accordingly. And repeat
 
-* **Data visualization and analysis are no longer explicit project requirements, but they are still very important.** In Phase 1, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
 
-## Deliverables
+## Results
 
-There are three deliverables for this project:
 
-* A **non-technical presentation**
-* A **Jupyter Notebook**
-* A **GitHub repository**
 
-The deliverables requirements are almost the same as in the Phase 1 Project, and you can review those extended descriptions [here](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables). In general, everything is the same except the "Data Visualization" and "Data Analysis" requirements have been replaced by "Modeling" and "Regression Results" requirements.
-
-### Non-Technical Presentation
-
-Recall that the non-technical presentation is a slide deck presenting your analysis to ***business stakeholders***, and should be presented live as well as submitted in PDF form on Canvas.
-
-We recommend that you follow this structure, although the slide titles should be specific to your project:
-
-1. Beginning
-    - Overview
-    - Business and Data Understanding
-2. Middle
-    - **Modeling**
-    - **Regression Results**
-3. End
-    - Recommendations
-    - Next Steps
-    - Thank you
-
-Make sure that your discussion of modeling and regression results is geared towards a non-technical audience! Assume that their prior knowledge of regression modeling is minimal. You don't need to explain how linear regression works, but you should explain why linear regression is useful for the problem context. Make sure you translate any metrics or coefficients into their plain language implications.
-
-The graded elements for the non-technical presentation are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables).
 
 ### Jupyter Notebook
 
