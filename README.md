@@ -45,7 +45,9 @@ The project objectives are as follows:
 
 1 To create a complex model using several different independent variables that can swifty and effectively achieve pricing estimates closer to realized housing 
   prices
+  
 2 To evaluate different models that ultimately lead to selecting our best model for predicting house prices
+
 3 To provide insight on house features that have the biggest impact on sale price
 
 ## Rationale:
