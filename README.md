@@ -6,11 +6,16 @@ The following are the group members that completed the project
 * Caleb Ochieng
 * Bedan Njoroge
 
-## Project Overview
+![20150622231001-for-sale-real-estate-home-house](https://github.com/EngCS254/dsc-phase-2-project-v2-3/assets/133906913/4bf8c2cb-d958-459f-acd7-c081acb67d98)
 
-For this project, you will use multiple linear regression modeling to analyze house sales in a northwestern county.
+
+## Introduction
+
+Our data analysis project addresses a pressing issue in King County's real estate market: increasing home values. We aim to dissect the King County Sales dataset to provide actionable insights for homeowners. We explored house design's impact on sale values, analyzed the relationship between dimensions and prices, assessed numeric and categorical variables, and evaluated location's role in pricing. Our goal is to empower homeowners to make informed decisions and enhance their property values in this dynamic market.
+
 
 ### Business Problem
+Our project will cater to first-time home buyers, generally in their 20's and 30's and perhaps thinking of starting a family. Our regression model will help inform home buyers on which features most impact the overall price, so they can be more strategic when buying their first home. Our hope is to showcase what features may add additional costs, so buyers can reflect whether each feature is worth it or not.
 
 Our data analysis project addresses a pressing issue in King County's real estate market: increasing home values. We aim to dissect the King County Sales dataset to provide actionable insights for homeowners. We explored house design's impact on sale values, analyzed the relationship between dimensions and prices, assessed numeric and categorical variables, and evaluated location's role in pricing. Our goal is to empower homeowners to make informed decisions and enhance their property values in this dynamic market.
 
