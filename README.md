@@ -10,9 +10,17 @@ To achieve this objective, we will employ multiple linear regression modeling to
 
 The first sections focus on investigating, cleaning, wrangling, and engineering some new features. The next section contains 2 models and evaluation of each, ultimately leading us to select our best model for predicting house prices thhat will maximize profit. Finally, we will make recommendations and provide insight on house features that have the biggest impact on sale price to a team of real estate agents that are looking to get into the business of remodeling houses.
 
-## Problem statement
+## Business Problem
 
-The problem at hand is to provide homeowners with accurate advice on how the named factors can impact the estimated value of their properties and homes, and the amount by which it can increase. This information is crucial for the real estate agency to guide their clients towards making informed decisions which in return will help homeowners to maximize their return on investment when selling their properties. Therefore, the primary objective of this project is to analyze the impact of home renovations on the estimated value of properties and provide recommendations that can help the real estate agency and their clients to make sound investment decisions.
+A group of real estate agents are looking to expand their business into renovating houses in addition to selling. They need guidance on assisting clients with recommendations on which home renovations may increase the estimated value of their homes. They want to accurately predict the value of homes based on the features of the house so they can maximize profits for their remodels. In order to accomplish this, they have enlisted our help in building a model to predict the price of homes in the county.
+
+Objectives:
+
+To provide insight on house features that have the biggest impact on sale price
+
+To create a complex model using several different independent variables that can swifty and effectively achieve pricing estimates that may increase the estimated value of their homes
+
+To evaluate different models that ultimately lead to selecting our best model for maximizing profit after renovation
 
 ## Data Understanding
 
@@ -40,15 +48,6 @@ This data originates from the King County House Sales dataset, accessible throug
 
 10 condition - How good the overall condition of the house is. Related to maintenance of house
 
-## Objectives
-The project objectives are as follows:
-
-1 To create a complex model using several different independent variables that can swifty and effectively achieve pricing estimates closer to realized housing 
-  prices
-  
-2 To evaluate different models that ultimately lead to selecting our best model for predicting house prices
-
-3 To provide insight on house features that have the biggest impact on sale price
 
 ## Rationale:
 
