@@ -72,12 +72,10 @@ Observation: Our regression model above showed strong multicollinearity between 
 
 
 ### Recommendations
-* We find that the conclusion makes a compelling case for using the Ordinary Least Squares (OLS) regression model, especially given its high R-squared value. However, we believe there are areas for enhancement. For instance, we suggest clarifying the disparity between the R-squared values of the OLS and Ridge models, especially if the lower value for Ridge is not a typographical error.
-
-* Additionally, we recommend providing more details on how multicollinearity was managed using Ridge and Lasso regularization, including their impact on the predictor variables. Incorporating information on cross-validation methods used, and possibly discussing statistical measures like p-values or confidence intervals, would add depth to the analysis.
-
-* Lastly, while the conclusion states that the OLS model aligns well with organizational objectives, We think it would be beneficial to specify its practical applications. This could involve outlining the types of decisions the model could influence and suggesting directions for future research to make the recommendations more actionable. Overall, these refinements would make the conclusion even more robust and comprehensive.
-
+1. Bathrooms and bedrooms significantly impact house value (Bath: +$240,400, Bed: +$21,850 each).
+2. More square footage (sqft_living) adds $230.6 per sqft, nearby living space (sqft_living15) adds $76.96.
+3. Combining grade and sqft_living boosts price (+$157.43 per sqft, Grade 13: +$2,397,000).
+4. Location, especially 98004 (Bellevue), plays a vital role, contributing $1,330,000, with an 80.1% R-squared.
 
 
 
