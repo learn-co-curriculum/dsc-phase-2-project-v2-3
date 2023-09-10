@@ -8,7 +8,7 @@ The goal of this project is to conduct extensive research on the real estate mar
 
 To achieve this objective, we will employ multiple linear regression modeling to analyze house sales data in the King County area. By using statistical techniques, we aim to identify key factors that impact property sales in the region and provide valuable insights to guide our recommendations.
 
-The first sections focus on investigating, cleaning, wrangling, and engineering some new features. The next section contains 2 models and evaluation of each, ultimately leading us to select our best model for predicting house prices that will maximize profit. Finally, we will make recommendations and provide insight on house features that have the biggest impact on sale price to a team of real estate agents that are looking to get into the business of remodeling houses.
+The first sections focus on investigating, cleaning, wrangling, and engineering some new features. The next section contains 3 models and evaluation of each, ultimately leading us to select our best model for predicting house prices that will maximize profit. Finally, we will make recommendations and provide insight on house features that have the biggest impact on sale price to a team of real estate agents that are looking to get into the business of remodeling houses.
 
 ## Business Problem
 
