@@ -14,7 +14,7 @@ The first sections focus on investigating, cleaning, wrangling, and engineering 
 
 A group of real estate agents are looking to expand their business into renovating houses in addition to selling. They need guidance on assisting clients with recommendations on which home renovations may increase the estimated value of their homes. They want to accurately predict the value of homes based on the features of the house so they can maximize profits for their remodels. In order to accomplish this, they have enlisted our help in building a model to predict the price of homes in the county.
 
-### Objectives:
+**Objectives:**
 
 To provide insight on house features that have the biggest impact on sale price
 
@@ -179,9 +179,11 @@ Features with the most impact on sale price ranked. The features with the most p
 
 ## Results:
 
-In our final scaled model, we have achieved an R-squared value of 0.491, which indicates that approximately 49.1% of the variation in house prices can be explained by the selected features. This represents a slight improvement in model performance compared to previous iterations.
+1.In our final scaled model, we have achieved an R-squared value of 0.491, which indicates that approximately 49.1% of the variation in house prices can be explained by the selected features. This represents a slight improvement in model performance compared to previous iterations.
 
-Among the key features, "grade" and "sqft_living" have the most positive impact on sale price, suggesting that investing in improving the quality of the house and increasing its living space could potentially lead to higher resale values. However, it's crucial to note that the impact of some features, such as "bathrooms" and "bedrooms," appears to be negative, which means that simply adding more of these features may not necessarily increase the resale value.
+2.The Root Mean Squared Error (RMSE) values for both the training and test datasets have decreased as well. The training RMSE is approximately 186,658.39, and the test RMSE is approximately 182,969.03. These lower RMSE values suggest that our model's predictions are more accurate and closer to the actual sale prices of houses.
+
+3.Among the key features, "grade" with a coeff of 0.197 and "sqft_living" with a coeff of 0.187 have the most positive impact on sale price, suggesting that investing in improving the quality of the house and increasing its living space could potentially lead to higher resale values. However, it's crucial to note that the impact of some features, such as "bathrooms" and "bedrooms," appears to be negative, which means that simply adding more of these features may not necessarily increase the resale value.
 
 ## Limitations
 
@@ -189,4 +191,21 @@ Limitations of this model include the fact that it still relies on simplified li
 
 ## Recommendations
 
-Stakeholders looking to remodel houses and maximize resale value should consider that this model provides valuable insights into feature importance but may not account for external factors or market dynamics that can influence pricing. To achieve the best results, they should continue to gather local market information, consult with real estate experts, and consider other factors like location and market demand when making renovation decisions. Ultimately, a holistic approach that combines data-driven insights with market expertise will lead to the most profitable post-renovation strategy.
+In the final model with all features excluding sqft_lot, our model's performance based on the adjusted R-squared improved from 0.458 to 0.491. Meaning that 41.9% of the variation of the price variable within the data is explained by our model. In the final model, all features included in the model have statistical significance relationship with price. All p-values are less than 0.05.
+
+**Coefficient Interpretations:**
+
+For every increase in the grade of a home, it increases the price of a home by 19.7% For every square foot of living added to a home, it increases the price of a home by 18.7% For every increase in condition to a home, it increases the price of a home by 6.9% For every floor added to a home, it increases the price of a home by 1.0% For every bathroom added to a home, it decreases the price of the home by 1.4% For every bedroom added to a home, it decreases the price of the home by 3.2%
+
+**Conclusions for King County Real Estate Agents:**
+
+1.In order to maximize the price of a home, you should recommend to your clients that they should use great quality products when rennovating their home to increase the grade of their home to highest possible level.
+
+2.If the seller is wanting to expand the size of their home, creating another floor is a great option to increase the price of their home.
+
+3.Improving the condition of your home to a minimum, average condition, will increase your home's value by 6.9%.
+
+## Next Steps
+1.Add more features to our model to see the affects on adjusted R-squared.
+
+2.Create a similar tool for buyers as well that helps them decide what to offer, or what they can likely negotiate down to for a fair price
