@@ -1,9 +1,9 @@
 # Phase 2 Project For Group 7
 
 The following are the group members that completed the project
-* Abdihakim S Mohamed
-* Jennifer Njeri
 * Caleb Ochieng
+* Jennifer Njeri
+* Abdihakim S Mohamed
 * Bedan Njoroge
 
 ![20150622231001-for-sale-real-estate-home-house](https://github.com/EngCS254/dsc-phase-2-project-v2-3/assets/133906913/4bf8c2cb-d958-459f-acd7-c081acb67d98)
