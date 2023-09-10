@@ -61,6 +61,11 @@ For this model, we created a model with all features to serve as our baseline.
 
 ![baseline model](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7c247e7f-5fcd-4ca5-a95a-f265df7b9a7d)
 
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.48e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
 ### Baseline model Interpretation 
 The dependent variable being predicted is "price," which is the house price.
 
@@ -88,6 +93,11 @@ The interquantile range (IQR) is the difference between the 75th (q75) and 25th 
 
 ![model 1 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/17979b55-c038-461c-913c-5bce617354be)
 
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.71e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
 #### Interpretation
 
 Overall, while the R-squared value has decreased slightly, the model's predictive accuracy has improved as indicated by lower RMSE values. This means that our model may provide more accurate price predictions, which can be valuable for our business stakeholders when making real estate decisions. However, it's essential to keep refining and iterating on the model to further enhance its performance.
@@ -100,6 +110,11 @@ Overall, while the R-squared value has decreased slightly, the model's predictiv
 ## Model 2- Remove Outliers from Predictors
 
 ![model 2 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/071613cb-8a89-4b10-a1bc-a1199e4f928c)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.07e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
 
 #### Interpretation
 
