@@ -1,4 +1,5 @@
-# Phase 2 Project Description
+# Unlocking Insights in Real Estate:
+## A Regression Analysis of House Sales Trends in King County
 
 Another module down - you're almost half way there!
 
