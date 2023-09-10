@@ -11,7 +11,7 @@
 
 > Date: 06/09/2023
 
-![cutomer churn header](https://raw.githubusercontent.com/GayasuddinMohd/House-Price_Prediction/main/House%20Image.avif)
+![cutomer churn header](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/Untitled%20design%20(6).jpg)
 
 ---
 
