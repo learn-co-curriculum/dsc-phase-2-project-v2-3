@@ -85,6 +85,7 @@ The dependent variable being predicted is "price," which is the house price.
 ## Model 1 - Remove Outliers from Price
 
 The interquantile range (IQR) is the difference between the 75th (q75) and 25th percentiles (q25) of the data, therefore the middle 50% of the data. 1.5 multiplied by the IQR is a common way to identify and remove outliers that are less than q25 - (1.5 * IQR) and greater than q75 + (1.5 * IQR). I chose to remove outliers this way instead of 3 * std because the data was not normally distributed in the variables I was removing outliers from.
+
 ![model 1 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/17979b55-c038-461c-913c-5bce617354be)
 
 #### Interpretation
@@ -140,15 +141,25 @@ To determine which features have the most impact on sale price, I will update my
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 model6.params.sort_values(ascending=False).head(50)
+
 Intercept      12.991108
+
 grade           0.197454
+
 sqft_living     0.187173
+
 condition       0.069224
+
 waterfront      0.039226
+
 floors          0.010650
+
 bathrooms      -0.014737
+
 bedrooms       -0.032194
+
 dtype: float64
+
 Features with the most impact on sale price ranked. The features with the most positive impact on sale price in relation to renovation are grade and sqft_living
 
 ## Results:
