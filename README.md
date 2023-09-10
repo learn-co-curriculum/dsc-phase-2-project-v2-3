@@ -1,55 +1,192 @@
 ## Project Overview
-This project aims to provide valuable insights for a real estate agency operating in King County, Washington, USA. Specifically, the agency seeks to provide accurate advice to homeowners on how different factors such as number of bedrooms and bathrooms,sqft-living,sqft-lot,floors,waterfront,house condition, grade and year built  can potentially affect the estimated value of their properties and homes, and by how much. This information will help the agency guide their clients towards making informed decisions considering such factors, which can maximize their return on investment when selling their properties.
+
+This project aims to provide valuable insights for a real estate agency operating in King County, Washington, USA. Specifically, the agency seeks to provide accurate advice to homeowners on how home renovations can potentially affect the estimated value of their properties and homes, and by how much. This information will help the agency guide their clients towards making informed decisions on home renovations, which can maximize their return on investment when selling their properties.
 
 ## Introduction
-The goal of this project is to conduct extensive research on the real estate market in King County and determine the optimal price range for houses in different neighborhoods on behalf of a real estate agency.
+
+The goal of this project is to conduct extensive research on the real estate market in King County in order to explore the potential of renovating specific areas of a property to increase its value and make it more attractive to potential buyers. This approach can help homeowners to add functionality and beauty to their property while simultaneously boosting its resale value.
 
 To achieve this objective, we will employ multiple linear regression modeling to analyze house sales data in the King County area. By using statistical techniques, we aim to identify key factors that impact property sales in the region and provide valuable insights to guide our recommendations.
 
-Additionally, we will explore the potential of remodeling specific areas of a property to increase its value and make it more attractive to potential buyers. This approach can help homeowners to add functionality and beauty to their property while simultaneously boosting its resale value.
+The first sections focus on investigating, cleaning, wrangling, and engineering some new features. The next section contains 3 models and evaluation of each, ultimately leading us to select our best model for predicting house prices that will maximize profit. Finally, we will make recommendations and provide insight on house features that have the biggest impact on sale price to a team of real estate agents that are looking to get into the business of remodeling houses.
 
-## Problem statement
-The problem at hand is to provide homeowners with accurate advice on how the named factors can impact the estimated value of their properties and homes, and the amount by which it can increase. This information is crucial for the real estate agency to guide their clients towards making informed decisions which in return will help homeowners to maximize their return on investment when selling their properties. Therefore, the primary objective of this project is to analyze the impact of the above named factors on the estimated value of properties and provide recommendations that can help the real estate agency and their clients to make sound investment decisions.
+## Business Problem
 
-## Data Understanding
-The King County House Sales dataset, available in "kc_house_data.csv," is the primary data source for this project. However, one of the main challenges we may encounter is the ambiguity or incompleteness of the column names in the dataset. Nonetheless, with thorough research and careful judgment, we can extract the necessary insights to make informed decisions about which variables to use in our analysis.
+A group of real estate agents are looking to expand their business into renovating houses in addition to selling. They need guidance on assisting clients with recommendations on which home renovations may increase the estimated value of their homes. They want to accurately predict the value of homes based on the features of the house so they can maximize profits for their remodels. In order to accomplish this, they have enlisted our help in building a model to predict the price of homes in the county.
 
-Another challenge we face is ensuring that the multiple linear regression model we develop adds value to our analysis and provides actionable insights that go beyond meeting the project requirements.
-
-The dataset contains information on house sales in King County, including the price, design, square footage, location, and more. A comprehensive list of the column names can be found in the "Property Schema".
-
-We will also explore the general areas in which renovations are typically undertaken in properties to identify the potential impact on the estimated value of a property.
-
-## Objectives
-
-To create a complex model using several different independent variables that can swifty and effectively achieve pricing estimates closer to realized housing prices
-
-To evaluate different models that ultimately lead to selecting our best model for predicting house prices
+### Objectives:
 
 To provide insight on house features that have the biggest impact on sale price
 
+To create a complex model using several different independent variables that can swifty and effectively achieve pricing estimates that may increase the estimated value of their homes
+
+To evaluate different models that ultimately lead to selecting our best model for maximizing profit after renovation
+
+## Data Understanding
+
+This data originates from the King County House Sales dataset, accessible through the King County Open Data platform. The dataset contains information on single-family home sales spanning from 2014 to 2015.
+
+ The aspects we will be examining are as follows:
+ 
+1 price - sales price
+
+2 bedrooms - Number of bedrooms
+
+3 bathrooms - Number of bathrooms
+
+4 sqft_living - Square footage of living space in the home
+
+5 sqft_lot - Square footage of the lot
+
+6 floors - Number of floors (levels) in house
+
+7 waterfront - whether the house is on a waterfront
+
+8 grade - Overall grade of the house. Related to the construction and design of the house
+
+9 yr_built - Year when house was built
+
+10 condition - How good the overall condition of the house is. Related to maintenance of house
+
+
 ## Rationale:
 
-In choosing statistical analyses over basic data visualization, we opt for a more nuanced understanding of the intricate relationships within our dataset. While graphs offer visual representation, regression coefficients provide precise quantification of each feature's impact on house prices. This level of detail is paramount in the complex realm of real estate, where numerous factors converge to determine property values. Through regression analysis, we can discern subtle effects and interactions, offering a comprehensive assessment for our data science audience. Our modeling process was guided by these statistical insights, ensuring the model's accuracy and effectiveness.        
+In choosing statistical analyses over basic data visualization, we opt for a more nuanced understanding of the intricate relationships within our dataset.
+While graphs offer visual representation, regression coefficients provide precise quantification of each feature's impact on house prices. This level of detail is paramount in the complex realm of real estate, where numerous factors converge to determine property values. Through regression analysis, we can discern subtle effects and interactions, offering a comprehensive assessment for our data science audience. Our modeling process was guided by these statistical insights, ensuring the model's accuracy and effectiveness.     
+
+## Modelling
+
+## Baseline model
+For this model, we created a model with all features to serve as our baseline.
+
+![baseline model](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7c247e7f-5fcd-4ca5-a95a-f265df7b9a7d)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.48e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+### Baseline model Interpretation 
+The dependent variable being predicted is "price," which is the house price.
+
+-The model's R-squared value (0.593) indicates how much of the variance in the target variable (house prices) is explained by the features. An R-squared of 0.593 is relatively good but suggests that there may still be room for improvement.
+
+-The model's adjusted R-squared is the same as the R-squared in this case, meaning there are no penalties for the inclusion of additional features.
+
+-The F-statistic (3146) and its associated p-value (0.00) suggest that the model, as a whole, is statistically significant.
+
+-The coefficients (coef) for each feature represent how much the predicted price changes with a one-unit change in that feature, assuming all other features are constant. For example, a one-unit increase in square footage of living space (sqft_living) corresponds to an increase in predicted price of 216.4590 units, holding all other variables constant.
+
+-The p-values associated with each coefficient indicate their statistical significance. In this case, most coefficients have p-values less than 0.05 (usually considered significant), except for "bathrooms" (p-value = 0.007), which suggests that the number of bathrooms might have a weaker effect on house prices in this model.
+
+### Baseline Model Visualization
+
+#### Assumptions Check
+
+![baseline model image 1](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/21fb14da-4c16-4035-bc0c-1f0a82ab32c5)
+
+![baseline model image 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/99c9d3eb-c623-401e-8e93-4cd0837512d0)
+
+## Model 1 - Remove Outliers from Price
+
+The interquantile range (IQR) is the difference between the 75th (q75) and 25th percentiles (q25) of the data, therefore the middle 50% of the data. 1.5 multiplied by the IQR is a common way to identify and remove outliers that are less than q25 - (1.5 * IQR) and greater than q75 + (1.5 * IQR). I chose to remove outliers this way instead of 3 * std because the data was not normally distributed in the variables I was removing outliers from.
+
+![model 1 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/17979b55-c038-461c-913c-5bce617354be)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.71e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+#### Interpretation
+
+Overall, while the R-squared value has decreased slightly, the model's predictive accuracy has improved as indicated by lower RMSE values. This means that our model may provide more accurate price predictions, which can be valuable for our business stakeholders when making real estate decisions. However, it's essential to keep refining and iterating on the model to further enhance its performance.
+
+### Model 1 visualizations
+
+![model 1 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/67002417-588f-43eb-999c-20bfd2f20787)
+
+
+## Model 2- Remove Outliers from Predictors
+
+![model 2 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/071613cb-8a89-4b10-a1bc-a1199e4f928c)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.07e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+#### Interpretation
+
+Overall, although the R-squared has decreased slightly, our model's predictive accuracy has improved, as evidenced by lower RMSE values. This suggests that our model may provide more accurate price predictions, which can be highly valuable for our business stakeholders in making informed real estate decisions. We should continue to monitor and refine our model to achieve the best possible results.
+
+### Model 2 visualizations
+
+![model 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7363d6b7-6023-4fb4-b51e-1921e25ae3d4)
+
+![model 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7430f875-ecc1-4660-99ad-e10823fd95a5)
+
+## Model 3 - Log Transformation
+
+![model 3](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/0feeb006-df7f-4954-aac1-f7948b8c5ebc)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.51e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+#### Interpretation 
+
+R2 was 0.458, we have improved in this model to 0.491. Train RMSE: 186,658.29; Test RMSE: 182,969.03. Higher RMSE from ~143,000. Difference between train and test RMSE is acceptable. Model is not overfittted. Distibution of residuals is close to normal, still have some light tails indicating that errors are likely for extreme values. Homoscedasticity has greatly improved! Homes on the lower end now are more overpredicted, but due to the fact that we want a wide range of prices in our model it is acceptable. Even though our RMSE has increased, this is our best performing model because it passes the assumptions of regression.
+
+### Model 3 visualizations
+
+![model 3 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/cbffbbae-5f61-43c2-88bb-6ffab0e75c3e)
+
+
+![model 3 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/0a47c504-af33-4ddf-8e28-4eb6a49a6bd0)
+
+
+## Scale the Final Model
+
+To determine which features have the most impact on sale price, I will update my model fuction to scale the data using Standard Scaler. This will allow us to compare the effects of each feature on a level playing field.
+
+![final model ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/f15305e2-7a1f-4ea8-ba01-ce4dc7b6521a)
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+model6.params.sort_values(ascending=False).head(50)
+
+Intercept      12.991108
+
+grade           0.197454
+
+sqft_living     0.187173
+
+condition       0.069224
+
+waterfront      0.039226
+
+floors          0.010650
+
+bathrooms      -0.014737
+
+bedrooms       -0.032194
+
+dtype: float64
+
+Features with the most impact on sale price ranked. The features with the most positive impact on sale price in relation to renovation are grade and sqft_living
 
 ## Results:
 
-The model's performance hinges on two key metrics: Root Mean Square Error (RMSE) and R-squared (R²). With an RMSE of approximately 257,093, our predictions tend to deviate within this range from actual prices. Simultaneously, the R² value of 0.51 signifies that 51% of the variability in house prices is elucidated by our model. Among the features, bedrooms wield the most significant impact, with each additional bedroom decreasing the price by about 
-7,967. Living area positively influences prices, with each additional square foot resulting in an increase of approximately 
-2,096. The Random Forest model bolsters accuracy, yielding a lower RMSE of about 91,818, indicating enhanced predictive capability.
+In our final scaled model, we have achieved an R-squared value of 0.491, which indicates that approximately 49.1% of the variation in house prices can be explained by the selected features. This represents a slight improvement in model performance compared to previous iterations.
 
-## Limitations and Recommendations:
+Among the key features, "grade" and "sqft_living" have the most positive impact on sale price, suggesting that investing in improving the quality of the house and increasing its living space could potentially lead to higher resale values. However, it's crucial to note that the impact of some features, such as "bathrooms" and "bedrooms," appears to be negative, which means that simply adding more of these features may not necessarily increase the resale value.
 
-For a data science audience, it is crucial to acknowledge potential limitations. Assumptions inherent in linear regression may not perfectly align with the intricate dynamics of the real estate market. Outliers and influential data points could potentially skew results, warranting vigilant consideration. 
-To augment the model's efficacy, stakeholders should supplement it with expert judgment and market awareness. While the model excels at providing price ranges, it does not encompass broader market trends or unforeseen external influences. Therefore, an iterative approach involving an expanded dataset and exploration of advanced modeling techniques, such as Random Forest Regressors, will refine the model's accuracy and applicability in real-world scenarios.
+## Limitations
 
-## Next Steps
-More research is required to have a more integrated and informative dataset finding more factors that influence the price.
+Limitations of this model include the fact that it still relies on simplified linear relationships between features and house prices. It doesn't capture all the nuances and interactions that could exist in the real estate market. Additionally, while the R-squared value has improved, there's room for further refinement.
 
-More time would be required to fine_tune our findings and model results.
+## Recommendations
 
-Using datasets from other counties to be able to better advice our customers from comparing the dataset results.
-
-The agency may have a questionnaire to identify their strengths, weaknesses, opportunities and threats and use this information to prioritize recommendations that would help address their weaknesses and take advantge of their opportunities and strengths.
-
-It is also important for the agency to continuously evaluate the effectiveness of the strategies they implement and make adjustments as necessary. This could involve tracking metrics like website traffic, this model, social media engagement, and lead generation to assess the impact of their efforts and identify areas for improvement.
+Stakeholders looking to remodel houses and maximize resale value should consider that this model provides valuable insights into feature importance but may not account for external factors or market dynamics that can influence pricing. To achieve the best results, they should continue to gather local market information, consult with real estate experts, and consider other factors like location and market demand when making renovation decisions. Ultimately, a holistic approach that combines data-driven insights with market expertise will lead to the most profitable post-renovation strategy.
