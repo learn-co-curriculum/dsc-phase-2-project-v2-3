@@ -61,7 +61,7 @@ For this model, we created a model with all features to serve as our baseline.
 
 ![baseline model](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7c247e7f-5fcd-4ca5-a95a-f265df7b9a7d)
 
-Notes:
+##### Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [2] The condition number is large, 5.48e+05. This might indicate that there are
 strong multicollinearity or other numerical problems.
