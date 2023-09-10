@@ -70,6 +70,24 @@ In this phase, we focus on ensuring that our dataset is well-prepared and suitab
 ---
 
 ## Exploratory Data Analysis
+![The Price Hist](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/price_dist.png)
+The column of interest was price. It had a right skewed distribution with a positive skewness value of 4.02 indicating that a small number of houses have significantly higher prices in comparison to the majority.
+
+![Sqft_Living](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/sqft_dist.png)
+The variable with the highest correlation to the prices of houses was sqft living which referred to the square footage of living space in the home.
+
+The distribution was right skewed distribution with a positive skewness value of 1.47. This means that there are a few houses with very spacious living areas.
+
+Other variables that we considered key to the pricing of homes were the number of bathrooms and number of bedrooms.
+
+![Bed_rooms](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/avg_price_per_bedroom.png)
+
+For bedrooms the trend was that houses with more bedrooms tend to fetch higher prices than those with few bedrooms.
+
+![Bathrooms](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/avg_price_per_bathroom.png)
+
+Houses with more bathrooms generally command higher prices. The trend is clear until around 6-7 bedrooms beyond which price variations become more scattered
+
 
 
 ---
@@ -87,12 +105,16 @@ In this phase, we focus on ensuring that our dataset is well-prepared and suitab
 However, in practice, the intercept often doesn’t have a meaningful interpretation, especially when it doesn’t make sense to have all predictors be zero (like in this case, a house cannot have zero bedrooms or zero square footage). It’s more useful in adjusting the model’s predictions to the scale of the dependent variable. It’s also worth noting that the p-value for the intercept is less than 0.05, indicating that it is statistically significant in this model.
 
 2. Communicating Results - Residual Plots
-     * The points in the residual plot are randomly dispersed around the horizontal axis, but a granular pattern is not obvious hence a nonlinear model maybe more appropriate for the research question.
 
-3. Communicating Results - QQ Plot
-     * The data points fall above or below the line, meaning the data is not normally distributed.
+![Sqft_Living](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/residual_plot.png)
+- The points in the residual plot are randomly dispersed around the horizontal axis, but a granular pattern is not obvious hence a nonlinear model maybe more appropriate for the research question.
+
+4. Communicating Results - QQ Plot
+![SQQ](https://github.com/PeterMuthoma/dsc-phase-2-project-v2-3/blob/main/plots/qqplot.png)
+
+-The data points fall above or below the line, meaning the data is not normally distributed.
   
-4. Communicating Results - Test for Heteroskedasticity
+6. Communicating Results - Test for Heteroskedasticity
      * We see that a lot of values are scattered around the mean while a fairly large amount are spread further apart from the mean, meaning that there are no obvious patterns. We performed a test for heteroscedasticity to be certain. We will used Bartlett's Test to test the null hypothesis that the variances in this dataset are homogeneous (equal)
      * This is a hypothesis test that establishes a null hypothesis that the variance is equal for all our data points,and the alternative hypothesis is that at least one of the variances is different.
      * The test uses the chi-squared distribution to calculate the test statistic and make a decision about the null hypothesis.
@@ -115,12 +137,6 @@ However, in practice, the intercept often doesn’t have a meaningful interpreta
   
 3. Our model has room for improvement. Its R2 score is 0.63. This is not a poor result, considering that we are dealing with real world data that has a lot of noise. However, this also implies that the selected input features, cannot account for more than 40% of the variation in housing prices. The linear model would not be suitable model for the specific question as the residuals are not normally distributed.
 
----
-
-## Recommendations
-The company should come up with a solution that caters to customers who make two or more calls to customer service. They should also collect more data, preferably those that will make the current dataset more balanced, e.g., more customers from Area Codes 408 and 510, more customers who churned, and more customers subscribed to the international plan.
-
-[Back To The Top](#Customer-Churn-Predicition--Classification-Analysis)
 
 ---
 
