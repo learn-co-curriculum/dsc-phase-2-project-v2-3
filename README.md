@@ -61,7 +61,6 @@ For this model, we created a model with all features to serve as our baseline.
 
 ![baseline model](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7c247e7f-5fcd-4ca5-a95a-f265df7b9a7d)
 
-
 ### Baseline model Interpretation 
 The dependent variable being predicted is "price," which is the house price.
 
@@ -75,7 +74,82 @@ The dependent variable being predicted is "price," which is the house price.
 
 -The p-values associated with each coefficient indicate their statistical significance. In this case, most coefficients have p-values less than 0.05 (usually considered significant), except for "bathrooms" (p-value = 0.007), which suggests that the number of bathrooms might have a weaker effect on house prices in this model.
 
+### Baseline Model Visualization
 
+#### Assumptions Check
+
+![baseline model image 1](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/21fb14da-4c16-4035-bc0c-1f0a82ab32c5)
+
+![baseline model image 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/99c9d3eb-c623-401e-8e93-4cd0837512d0)
+
+## Model 1 - Remove Outliers from Price
+
+The interquantile range (IQR) is the difference between the 75th (q75) and 25th percentiles (q25) of the data, therefore the middle 50% of the data. 1.5 multiplied by the IQR is a common way to identify and remove outliers that are less than q25 - (1.5 * IQR) and greater than q75 + (1.5 * IQR). I chose to remove outliers this way instead of 3 * std because the data was not normally distributed in the variables I was removing outliers from.
+![model 1 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/17979b55-c038-461c-913c-5bce617354be)
+
+#### Interpretation
+
+Overall, while the R-squared value has decreased slightly, the model's predictive accuracy has improved as indicated by lower RMSE values. This means that our model may provide more accurate price predictions, which can be valuable for our business stakeholders when making real estate decisions. However, it's essential to keep refining and iterating on the model to further enhance its performance.
+
+### Model 1 visualizations
+
+![model 1 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/67002417-588f-43eb-999c-20bfd2f20787)
+
+
+## Model 2- Remove Outliers from Predictors
+
+![model 2 ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/071613cb-8a89-4b10-a1bc-a1199e4f928c)
+
+#### Interpretation
+
+Overall, although the R-squared has decreased slightly, our model's predictive accuracy has improved, as evidenced by lower RMSE values. This suggests that our model may provide more accurate price predictions, which can be highly valuable for our business stakeholders in making informed real estate decisions. We should continue to monitor and refine our model to achieve the best possible results.
+
+### Model 2 visualizations
+
+![model 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7363d6b7-6023-4fb4-b51e-1921e25ae3d4)
+
+![model 2](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/7430f875-ecc1-4660-99ad-e10823fd95a5)
+
+## Model 3 - Log Transformation
+
+![model 3](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/0feeb006-df7f-4954-aac1-f7948b8c5ebc)
+
+##### Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.51e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+#### Interpretation 
+
+R2 was 0.458, we have improved in this model to 0.491. Train RMSE: 186,658.29; Test RMSE: 182,969.03. Higher RMSE from ~143,000. Difference between train and test RMSE is acceptable. Model is not overfittted. Distibution of residuals is close to normal, still have some light tails indicating that errors are likely for extreme values. Homoscedasticity has greatly improved! Homes on the lower end now are more overpredicted, but due to the fact that we want a wide range of prices in our model it is acceptable. Even though our RMSE has increased, this is our best performing model because it passes the assumptions of regression.
+
+### Model 3 visualizations
+
+![model 3 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/cbffbbae-5f61-43c2-88bb-6ffab0e75c3e)
+
+
+![model 3 visuals](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/0a47c504-af33-4ddf-8e28-4eb6a49a6bd0)
+
+
+## Scale the Final Model
+
+To determine which features have the most impact on sale price, I will update my model fuction to scale the data using Standard Scaler. This will allow us to compare the effects of each feature on a level playing field.
+
+![final model ](https://github.com/elizabethnyambura/dsc-phase-2-project-v2-3/assets/136367890/f15305e2-7a1f-4ea8-ba01-ce4dc7b6521a)
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+model6.params.sort_values(ascending=False).head(50)
+Intercept      12.991108
+grade           0.197454
+sqft_living     0.187173
+condition       0.069224
+waterfront      0.039226
+floors          0.010650
+bathrooms      -0.014737
+bedrooms       -0.032194
+dtype: float64
+Features with the most impact on sale price ranked. The features with the most positive impact on sale price in relation to renovation are grade and sqft_living
 
 ## Results:
 
