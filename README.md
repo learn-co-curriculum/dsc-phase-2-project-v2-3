@@ -14,7 +14,7 @@ The first sections focus on investigating, cleaning, wrangling, and engineering 
 
 A group of real estate agents are looking to expand their business into renovating houses in addition to selling. They need guidance on assisting clients with recommendations on which home renovations may increase the estimated value of their homes. They want to accurately predict the value of homes based on the features of the house so they can maximize profits for their remodels. In order to accomplish this, they have enlisted our help in building a model to predict the price of homes in the county.
 
-Objectives:
+### Objectives:
 
 To provide insight on house features that have the biggest impact on sale price
 
