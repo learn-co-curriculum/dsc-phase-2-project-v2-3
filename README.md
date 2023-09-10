@@ -60,7 +60,7 @@ The project encompasses several key analysis steps:
 
 ## Model Results
 
-The final regression model achieved an R-squared value of approximately 56%, indicating that 56% of the variance in house prices is explained by the selected predictor variables. Key factors influencing house prices include:
+The final regression model achieved an R-squared value of approximately 59.5%, indicating that 59.5% of the variance in house prices is explained by the selected predictor variables. Key factors influencing house prices include:
 * square footage of living space
 * the number of bathrooms
 * bedrooms
