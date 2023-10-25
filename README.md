@@ -69,12 +69,12 @@ A general trend noted is that the price of a house tends to increase with an inc
   <img src='./images/grade_price.png'/>
 </div>
 
-#### 2.Impact of the Number of Bathrooms on a House's Pricing
+#### 2.Impact of the Number of Floors on a House's Pricing
 
-Generally, an increase in the number of bathrooms in a house leads to an increase in house price. There are some anomalies, however, with houses with 1.25 bathrooms having higher average prices as compared to houses with 1.5-3.0 bathrooms. There is also a sharp drop in average cost for houses with 7.5 bathrooms as compared to 6.75 bathrooms, with an even sharper climb being noted for houses with 7.75 bathrooms.
+Generally, an increase in the number of floors in a house leads to an increase in house price. There are some anomalies, however, with houses with 2.5 floors having the highest average prices, and a house with 3 floors having lower average prices as compared to houses with 3.5 floors.
 
 <div style='text-align:center'>
-  <img src='./images/bathrooms_price.png'/>
+  <img src='./images/floors_price.png'/>
 </div>
 
 #### 3.Relation of Price with Other Variables
