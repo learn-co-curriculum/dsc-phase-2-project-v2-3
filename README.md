@@ -61,6 +61,81 @@ The other columns were then copmarede to the price as seen in the figure below. 
   <img src='./images/all_vars.png'/>
 </div>
 
-### Impact of Grade of a House on Pricing
+#### 1.Impact of Grade of a House on Pricing
+
+A general trend noted is that the price of a house tends to increase with an increase in the grade rating. The boxplot below depicts this clearly, as well as giving added information such as the median and outliers.
+
+<div style='text-align:center'>
+  <img src='./images/grade_price.png'/>
+</div>
+
+#### 2.Impact of the Number of Bathrooms on a House's Pricing
+
+Generally, an increase in the number of bathrooms in a house leads to an increase in house price. There are some anomalies, however, with houses with 1.25 bathrooms having higher average prices as compared to houses with 1.5-3.0 bathrooms. There is also a sharp drop in average cost for houses with 7.5 bathrooms as compared to 6.75 bathrooms, with an even sharper climb being noted for houses with 7.75 bathrooms.
+
+<div style='text-align:center'>
+  <img src='./images/bathrooms_price.png'/>
+</div>
+
+#### 3.Relation of Price with Other Variables
+
+The correlation factors vis-a-vis the price were looked at for all the other variables and price are summarised as follows, in descending order:
+
+| variable          | factor   |
+| ----------------- | -------- |
+| 1. sqft_living    | .704892  |
+| 2. grade          | .667827  |
+| 3. sqft_above     | .609441  |
+| 4. sqft_living15  | .582869  |
+| 5. bathrooms      | .526509  |
+| 6. view_EXCELLENT | .310087  |
+| 7. bedrooms       | .309573  |
+| 8. lat            | .305096  |
+| 9. waterfront     | .273248  |
+| 10. floors        | .258151  |
+| 11. view_GOOD     | .181053  |
+| 12. view_FAIR     | .091643  |
+| 13. sqft_lot      | .086709  |
+| 14. sqft_lot15    | .082021  |
+| 15. yr_built      | .053359  |
+| 16. condition     | .035723  |
+| 17. long          | .021343  |
+| 18. id            | -.018544 |
+| 19. zipcode       | -.049316 |
+| 20. view_NONE     | -.358042 |
+
+### Baseline Model
+
+The dependent variable (y_baseline) in our model reflects the goal variable we wish to forecast, which is the price of homes. The predictor variable is the independent variable (x_baseline), namely the square footage of living space within the dwellings. This model's purpose is to build a linear connection between'sqft_living' and 'price' by estimating the coefficients (slope and intercept) that characterize how changes in'sqft_living' correspond to changes in 'price.' These coefficients reveal information about the strength and direction of the association.
+
+The Baseline Model forecasts housing prices ('price') using'sqft_living'. The main conclusions are as follows:
+
+- **R-squared**: The size of a living area accounts for approximately 49.7% of price fluctuation.
+- **Coefficients**: The price goes up by around $284.26 per square foot.
+- **MAE**: There is potential for improvement since the average prediction error is $175,229.76.
+- **Significance of the Model**: The model possesses statistical significance.
+- **Condition Number**: Indicates possible problems with multicollinearity.
+
+In conclusion, the Baseline Model, which explains roughly half of price fluctuation, is a solid place to start. Although statistically significant, it may be made better by taking multicollinearity into account.
+
+### Multiple Linear Regression Model
+
+A powerful statistical technique for estimating home values is the Multiple Linear Regression Model, which takes into account a number of independent factors like the number of bedrooms, baths, square footage, lot size, floors, waterfront location, grade, and condition. It gives crucial information about the complex relationship between these characteristics and home prices, empowering all parties involved to make better decisions about pricing, investing, and understanding the behavior of the housing market in the real estate sector.
+
+In summary, this Multiple Linear Regression Model is robust and highly significant:
+
+- **R-squared**: It explains about 70.3% of house price variation, indicating a strong relationship between predictors and prices.
+- **Adjusted R-squared**: This value (0.702) suggests a well-fitted model without overfitting.
+- **F-statistic**: The high F-statistic (2309) underscores the model's strong explanatory power.
+- **Coefficients**: Features like 'bathrooms,' 'sqft_living,' 'floors,' 'waterfront,' 'condition,' and 'grade' positively impact prices, while 'bedrooms' has a negative effect.
+- **Intercept**: The intercept isn't practically significant, representing the price when all other predictors are zero.
+- **MAE**: The model's Mean Absolute Error (MAE) is approximately 127,176.67, indicating reasonably accurate predictions.
+- **Multicollinearity**: There may be multicollinearity concerns that require further investigation.
+
+The lowest eigenvalue in the Multiple Linear Regression Model indicates the presence of substantial multicollinearity or design matrix problems, which call for more research. Despite this, the model shows strength in explaining a considerable amount of the variation in housing prices, mostly due to a variety of factors that have a positive or negative influence on prices. Model dependability requires awareness of possible multicollinearity, but it may also be enhanced by lowering the Mean Absolute Error (MAE) through feature selection optimization and model refining. Finally, even if there are still certain areas that might be improved and refined, this model provides insightful information for wise real estate selections.
+
+### Multicollinearity
+
+### VIF
 
 ## Evaluation
