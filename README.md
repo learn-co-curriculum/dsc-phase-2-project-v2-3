@@ -1,5 +1,15 @@
 # Phase 2 Project - Prediction of House Prices in King County, WA
 
+## Admin
+
+This analysis was done by group 12 members, namely:
+
+- Sammy Kimani
+- Valerie Kiprop
+- Ruth Nanjala
+- Sanayet Sankaine
+- Mwiti Mwongo
+
 ## Overview
 
 Through this project, we are setting out on a mission to provide homeowners with a thorough awareness of the factors that influence housing pricing. This initiative is a joint venture with our shareholder, a well-known real estate company committed to helping homeowners navigate the complex home-buying and selling process.
