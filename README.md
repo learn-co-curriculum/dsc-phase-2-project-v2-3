@@ -35,3 +35,12 @@ The dataset can be found in the file *"kc_house_data.csv"* in the Data folder, i
 2. Dataset can be found in the file "kc_house_data.csv".
 3. Check requirements in Technologies section above and download libraries if necessary.
 
+## Data Wrangling
+Here we will work on data celaning, handling missing values, data transformation, handling duplicates, data reshaping and other processes to ensure that we have a clean, structured, and suitable format for analysis and modeling
+
+## Exploratory Data Analysis (EDA)
+Here we will explore the different features of the dataset to gain a better understanding of the data. We will use data vizualization to uncover trends and patterns. We will use Feature Engineering to create new features from existing ones and perform One-Hot Encoding on categorical variables that we will require for analysis.
+
+![Alt text](image-1.png)
+
+
