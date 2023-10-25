@@ -134,8 +134,6 @@ In summary, this Multiple Linear Regression Model is robust and highly significa
 
 The lowest eigenvalue in the Multiple Linear Regression Model indicates the presence of substantial multicollinearity or design matrix problems, which call for more research. Despite this, the model shows strength in explaining a considerable amount of the variation in housing prices, mostly due to a variety of factors that have a positive or negative influence on prices. Model dependability requires awareness of possible multicollinearity, but it may also be enhanced by lowering the Mean Absolute Error (MAE) through feature selection optimization and model refining. Finally, even if there are still certain areas that might be improved and refined, this model provides insightful information for wise real estate selections.
 
-### Multicollinearity
-
-### VIF
+### Multicollinearity & VIF
 
 ## Evaluation
