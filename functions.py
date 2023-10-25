@@ -1,29 +1,63 @@
-def calculate_vif(df, target_variable):
+def fit_linear_regression(df, dependent_variable, independent_variables):
     """
-    Calculate the Variance Inflation Factor (VIF) for each independent variable in a dataframe.
+    Fit a linear regression model to the given data.
 
-    Parameters:
-        df (DataFrame): The input dataframe containing the independent variables.
-        target_variable (str): The name of the target variable.
+    Args:
+        df (pandas.DataFrame): The input dataframe containing the data.
+        dependent_variable (str): The name of the dependent variable.
+        independent_variables (list): The list of independent variables.
 
     Returns:
-        vif_data (DataFrame): A dataframe containing the variables and their corresponding VIF values.
+        tuple: A tuple containing the fitted model and its summary.
+
+    Raises:
+        None
+
+    Example:
+        >>> df = pd.DataFrame({'x': [1, 2, 3], 'y': [2, 4, 6]})
+        >>> fit_linear_regression(df, 'y', ['x'])
+        (model, model_summary)
     """
-    # Separate the target variable
-    independent_vars = df.drop(columns=[target_variable])
+    if len(independent_variables) == 1:
+        # Simple Linear Regression
+        model_formula = f"{dependent_variable} ~ {independent_variables[0]}"
+        model = ols(model_formula, data=df).fit()
+    else:
+        # Multiple Linear Regression
+        X = df[independent_variables]
+        X = sm.add_constant(X)  # Add a constant for the intercept
+        y = df[dependent_variable]
+        model = sm.OLS(y, X).fit()
 
-    vif_data = pd.DataFrame()
-    vif_data["Variable"] = independent_vars.columns
-    vif_data["VIF"] = [variance_inflation_factor(
-        independent_vars.values, i) for i in range(independent_vars.shape[1])]
+    model_summary = model.summary()
 
-    # Handle cases with high VIF values (you can choose a threshold) by setting VIF to NaN
-    threshold = 5  # You can adjust this threshold based on your analysis
-    vif_data.loc[vif_data["VIF"] > threshold, "VIF"] = np.nan
-
-    return vif_data
+    return model, model_summary
 
 
-# Example usage:
-vif_results = calculate_vif(df, target_variable="price")
-print(vif_results)
+def model_metrics(df, dependent_variable, independent_variables):
+    """
+    Calculate the root mean squared error (RMSE) and mean absolute error (MAE) for a linear regression model.
+
+    Parameters:
+    - df (pandas.DataFrame): The input DataFrame containing the data.
+    - dependent_variable (str): The name of the dependent variable column in the DataFrame.
+    - independent_variables (list): A list of names of the independent variable columns in the DataFrame.
+
+    Returns:
+    - rmse (float): The root mean squared error.
+    - mae (float): The mean absolute error.
+    """
+    # Create and fit the linear regression model
+    X = df[independent_variables]
+    X = sm.add_constant(X)  # Add a constant for the intercept
+    y = df[dependent_variable]
+    model = sm.OLS(y, X).fit()
+
+    # Calculate RMSE
+    y_pred = model.predict(X)
+    rmse = (mean_squared_error(y, y_pred)) ** 0.5
+
+    # Calculate MAE
+    mae = mean_absolute_error(y, y_pred)
+
+    return rmse, mae
