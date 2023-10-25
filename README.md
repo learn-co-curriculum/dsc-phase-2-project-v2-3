@@ -136,4 +136,66 @@ The lowest eigenvalue in the Multiple Linear Regression Model indicates the pres
 
 ### Multicollinearity & VIF
 
-## Evaluation
+Understanding multicollinearity and the Variance Inflation Factor (VIF) is crucial for comprehending the stability and reliability of multiple linear regression models. The analysis's goal in this case is to forecast home prices utilizing a number of independent factors. High levels of correlation between these independent variables lead to multicollinearity, which can upset the equilibrium of the model and mask each one's unique impact on the dependent variable. A high VIF indicates troublesome correlations. VIF measures the extent to which correlated variables inflate the variance of coefficient estimates. via identifying these problems, the model may be improved via feature selection or engineering methods, such as VIF calculation. To sum up, the VIF evaluation is an essential post-regression phase that improves forecast accuracy for home prices and addresses multicollinearity, hence guaranteeing model stability and dependability.
+
+| Variable       | VIF      |
+| -------------- | -------- |
+| id             | 3.651306 |
+| bedrooms       | 1.644383 |
+| bathrooms      | 3.318441 |
+| sqft_living    | inf      |
+| sqft_lot       | 2.112248 |
+| floors         | 1.956486 |
+| waterfront     | 1.554692 |
+| condition      | 1.191248 |
+| grade          | 3.398382 |
+| sqft_above     | inf      |
+| sqft_basement  | inf      |
+| yr_built       | 1.924698 |
+| zipcode        | 0.484755 |
+| lat            | 1.180530 |
+| long           | 1.809039 |
+| sqft_living15  | 2.869586 |
+| sqft_lot15     | 2.145235 |
+| view_EXCELLENT | 1.873013 |
+| view_FAIR      | 1.339510 |
+| view_GOOD      | 1.504195 |
+| view_NONE      | 2.244391 |
+
+### New Model
+
+We calculated Variance Inflation Factors (VIF) for each independent variable in the original Multiple Linear Regression (MLR) model in order to address multi-collinearity. The Variance Inflation Factor (VIF) measures how much variable correlations cause the variance of regression coefficients to increase. Strong correlations between certain independent variables and other variables in the model are indicated by high VIF scores.
+
+We decided to develop a new MLR model in order to handle multi-collinearity and improve model stability and interpretability. Our goal in revising the model was to decrease inter-variable correlations and increase overall model dependability, thus we eliminated independent variables that had high VIF values.
+
+## Evaluation/Interpretation
+
+In this improved Multiple Linear Regression Model:
+
+- **R-squared (R²)**: Explains about 70.2% of house price variance, highlighting the significant impact of included variables on prices.
+- **Adjusted R-squared (Adj. R²)**: Aligns closely with R-squared, affirming the model's effectiveness in explaining price variation.
+- **F-statistic**: High F-statistic (p-value of 0.00) underlines the model's statistical significance, showing the combined impact of independent variables on house prices.
+- **Coefficients**: Represent estimated price changes for a one-unit shift in each variable while keeping others constant. For instance, an extra bedroom associates with a $37,780 price drop.
+- **Condition Number**: Markedly reduced condition number signals less multi-collinearity, improving stability and reliability in variable relationships.
+
+Overall, this enhanced model provides a more accurate understanding of house price dynamics. Reduced multi-collinearity makes it more reliable for price predictions.
+
+## Conclusion
+
+This analysis yields valuable insights into house price determinants:
+
+- **Square Footage Matters**: Larger living spaces (sqft_living) positively impact house prices.
+- **Property Grade is Important**: Higher-grade properties command higher prices.
+- **Bedrooms and Bathrooms**: More bedrooms and bathrooms correlate with higher prices.
+- **Location Counts**: Houses at higher latitudes and lower longitudes tend to be pricier.
+- **Waterfront Views**: Houses with waterfront views are significantly more expensive.
+- **View Quality**: Excellent and good views relate to higher prices.
+- **Floors**: More floors mean higher prices.
+- **Lot Size and Condition**: These variables have weaker but positive correlations with prices.
+
+- **ear Built**: Newer houses correlate positively with higher prices.
+- **Multi-Collinearity**: Initially addressed with VIF, improving model reliability.
+- **Improved Regression**: Explains 70.2% of price variance with reduced multi-collinearity.
+- **Strong Predictive Power**: Refined model offers accurate predictions with RMSE ≈ 203,269 and MAE ≈ 127,081.
+
+In summary, this analysis empowers real estate stakeholders to make informed decisions regarding investments, pricing, and market dynamics. The improved model enhances price prediction accuracy and reliability.
