@@ -1,285 +1,279 @@
-# Phase 2 Project Description
+# PREDICTING HOUSE PRICES IN KING COUNTY: A MULTIPLE LINEAR REGRESSION APPROACH.
 
-Another module down - you're almost half way there!
+![Image of King County](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/84b78065-9567-4d9e-b2fa-564d41d1183c)
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-v2-3/main/halfway-there.gif)
+### PROJECT BY:
+* Kelvin Rotich
+* Grace Mutuku
+* Joy Ogutu
+* Peter Otieno
+* Shuaib Mahamud
 
-All that remains in Phase 2 is to put your newfound data science skills to use with a large project!
 
-In this project description, we will cover:
+## INTRODUCTION
+Welcome to this presentation on predicting house prices in King County, Washington. In this project, we leverage a Multiple Linear Regression model to gain insights into the dynamic real estate market of this thriving region. Our analysis is based on a comprehensive dataset from King County, which encompasses a multitude of factors influencing property prices.
 
-* Project Overview: the project goal, audience, and dataset
-* Deliverables: the specific items you are required to produce for this project
-* Grading: how your project will be scored
-* Getting Started: guidance for how to begin working
+The primary purpose of our project is to develop a predictive model that accurately estimates house prices in King County. We aim to provide valuable insights to various stakeholders, including homeowners, real estate agents, investors, and developers, to help them make informed decisions regarding property pricing
 
-## Project Overview
+In the following sections, we will delve into our project's methodology, key findings, and the model's performance in predicting house prices. Thank you for joining us in this exploration of King County's real estate landscape.
 
-For this project, you will use multiple linear regression modeling to analyze house sales in a northwestern county.
+## PROJECT OVERVIEW
 
-### Business Problem
+### King County’s Real Estate Background
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+The real estate market in King County, Washington, is known for its dynamism and diversity. This thriving area boasts a robust economy driven by tech giants like Amazon, Microsoft, and Boeing, which continually attract a large workforce. However, King County's real estate market, while vibrant, is not without its complexities and challenges. One defining characteristic of King County's real estate market is the ever-present demand for homes. Thus, there is a growing interest in sustainable housing options.  This robust demand has contributed to an ongoing conundrum: affordability. As more individuals seek housing, the supply-demand balance skews, leaving many residents struggling to find reasonably priced homes. As King County experiences urban expansion, the competition extends beyond traditional housing. The development of sustainable, modern, and environmentally friendly housing solutions is another front where stakeholders compete.
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+The King County real estate market is highly competitive, with various stakeholders such as developers, online platforms, and established real estate companies vying for their share of the market. To navigate the complexities of this environment effectively, it's crucial for local stakeholders to understand the dynamics of the real estate market. 
 
-### The Data
+To comprehend this intricate landscape, stakeholders must understand the factors influencing property prices, most of which align with the columns provided in our dataset:
+* Property-specific attributes, including location, size, condition, and amenities.
+* Market dynamics, which encompass supply and demand, interest rates, and broader economic conditions.
+* External factors, such as neighborhood characteristics and government policies.
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this assignment's GitHub repository. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+In response to these challenges, our project seeks to develop a predictive multilinear regression model, utilizing the dataset at hand. Real estate agents can provide more accurate pricing guidance and develop effective marketing strategies. Homeowners can make informed decisions when pricing their properties, and investors and developers can identify promising opportunities to maximize their returns.
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you **ignore** some or all of the following features:
+As we delve into the details of our predictive model, we will explore the methodology, key findings, and the model's performance. We will uncover how specific features and factors, such as the number of bedrooms, quality of views, and location, influence house prices in King County. 
 
-* `date`
-* `view`
-* `sqft_above`
-* `sqft_basement`
-* `yr_renovated`
-* `zipcode`
-* `lat`
-* `long`
-* `sqft_living15`
-* `sqft_lot15`
+### Problem Statement
 
-### Key Points
+In the dynamic real estate market of King County, Washington, where economic conditions, housing demand, and external influences drive property prices, the importance of accurate pricing cannot be overstated. The ever-present demand for homes, fueled by the presence of major tech companies and a stream of workers, creates a competitive environment. However, the challenge of accurately pricing properties in this competitive landscape can sometimes lead to overpricing. Sellers, eager to maximize their returns in a high-demand market, may set initial prices that are higher than what the market can sustain. This overpricing can, in turn, deter potential buyers and extend the time properties spend on the market. Therefore, the need for accurate pricing models that consider all relevant factors, including property conditions becomes paramount in ensuring that homes in King County are competitively priced, facilitating smoother transactions for both buyers and sellers.
 
-* **Your goal in regression modeling is to yield findings to support relevant recommendations. Those findings should include a metric describing overall model performance as well as at least two regression model coefficients.** As you explore the data and refine your stakeholder and business problem definitions, make sure you are also thinking about how a linear regression model adds value to your analysis. "The assignment was to use linear regression" is not an acceptable answer! You can also use additional statistical techniques other than linear regression, so long as you clearly explain why you are using each technique.
+### Objectives
 
-* **You should demonstrate an iterative approach to modeling.** This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
+1. Objective: To explore and analyze the impact of numeric attributes on house prices in King County.
+Identify which numeric features have the most significant influence on pricing.Provide insights into how each unit increase or decrease in these attributes affects the final sale price. Generate recommendations for homeowners, buyers, and investors to optimize property attributes and investments based on numeric data.
 
-* **Data visualization and analysis are no longer explicit project requirements, but they are still very important.** In Phase 1, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
+2. Objective: To investigate the influence of categorical attributes on house prices.
+Determine which categorical features, such as being on a waterfront or having a high-grade rating, command premium prices. Provide recommendations on how to leverage these categorical attributes to maximize property values. Assist stakeholders in making informed decisions based on categorical data.
 
-## Deliverables
+3. Objective: To create a precise property valuation model that calculates the cost of homes depending on a range of characteristics.
+This model will utilize a property’s characteristics, including but not limited to bedrooms, square footage, and more. By carefully selecting and incorporating these features, we intend to build a model that accurately reflects the diverse attributes influencing house prices.
 
-There are three deliverables for this project:
+## DATA UNDERSTANDING
 
-* A **non-technical presentation**
-* A **Jupyter Notebook**
-* A **GitHub repository**
+This dataset is housed in the kc_house_data.csv file within the project's data folder and  the columns outlined in the accompanying column_names.md file, include:
+- id - Unique identifier for a house
+- date - Date house was sold
+- price - Sale price (prediction target)
+- bedrooms - Number of bedrooms
+- bathrooms- Number of bathrooms
+- sqft_living - Square footage of living space in the home
+- sqft_lot - Square footage of the lot
+- floors - Number of floors (levels) in house
+- waterfront - Whether the house is on a waterfront
+- view - Quality of view from house
+- condition - How good the overall condition of the house is. Related to maintenance of house.
+- grade - Overall grade of the house. Related to the construction and design of the house.
+- sqft_above - Square footage of house apart from basement
+- sqft_basement - Square footage of the basement
+- yr_built - Year when house was built
+- yr_renovated - Year when house was renovated
+- zipcode - ZIP Code used by the United States Postal Service
+- lat - Latitude coordinate
+- long - Longitude coordinate
+- sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
+- sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors.
 
-The deliverables requirements are almost the same as in the Phase 1 Project, and you can review those extended descriptions [here](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables). In general, everything is the same except the "Data Visualization" and "Data Analysis" requirements have been replaced by "Modeling" and "Regression Results" requirements.
+Each column serves as a window into the world of real estate in King County, offering insights into the factors that influence house prices. By gaining a deep understanding of these columns and their relationships, we aim to pave the way for accurate property pricing and well-informed decisions for homeowners, real estate agents, and investors alike.
 
-### Non-Technical Presentation
+The dataset contains 21 columns and 21, 597 entries with sale prices and details of the houses sold from 2nd May 2014 to 27th May 2015 .
 
-Recall that the non-technical presentation is a slide deck presenting your analysis to ***business stakeholders***, and should be presented live as well as submitted in PDF form on Canvas.
+## DATA CLEANING AND PREPARATION
 
-We recommend that you follow this structure, although the slide titles should be specific to your project:
+Data preparation is a crucial stage in this project for a number of reasons:
+* Feature engineering: New features might be developed or current ones modified in order to improve analysis.
+* Handling Missing Data: Analysis results can be greatly impacted by missing data. In order to achieve a robust analysis, handling missing values must be decided, whether through imputation, deletion, or other suitable approaches.
+* Outlier detection: For statistical validity, outliers must be found and dealt with. We can use methods like visual inspection or statistical testing to find outliers and handle them correctly with the help of data preparation.
 
-1. Beginning
-    - Overview
-    - Business and Data Understanding
-2. Middle
-    - **Modeling**
-    - **Regression Results**
-3. End
-    - Recommendations
-    - Next Steps
-    - Thank you
+In the data preparation phase, several important actions were taken to ensure the dataset was ready for exploratory data analysis (EDA) and subsequent modeling:
+1. Null value counts and percentages were initially checked, revealing that most columns had no null values except for 'waterfront', 'view’ and 'yr_renovated’,  each with less than 30% missing data (add the percentages of each column). Rather than dropping these columns, null values were replaced: 'waterfront' and 'view' were set to "unknown," while 'yr_renovated' was imputed with the most common value, "0."
+2. Duplicate entries were identified based on the 'id' column, resulting in 177 flagged duplicates. Further investigation revealed that some houses were sold multiple times at different prices and times. These duplicate entries were retained for feature engineering. The 'date' column was converted to a datetime format, and a new 'seasons' column was introduced, allowing for the analysis of price trends across seasons i.e ‘Autumn’, ‘Spring’, ‘Fall’ and ‘Winter’.The 'yr_built' and 'yr_renovated' columns were cast to object types.
+3. Outliers were retained, as they represented genuine property attributes with valuable pricing information. Placeholder values were also addressed, with the '?' placeholder in the 'sqft_basement' column replaced with '0.0', the most common value.
+After these preparations, the dataset was confirmed to be ready for EDA, ensuring that the data was cleaned, imputed, and structured for meaningful analysis and model development. 
 
-Make sure that your discussion of modeling and regression results is geared towards a non-technical audience! Assume that their prior knowledge of regression modeling is minimal. You don't need to explain how linear regression works, but you should explain why linear regression is useful for the problem context. Make sure you translate any metrics or coefficients into their plain language implications.
+## EXPLORATORY DATA ANALYSIS
 
-The graded elements for the non-technical presentation are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables).
+A crucial turning point in our investigation occurs during the data analysis stage, which enables us to extract significant patterns and insights from the compiled dataset. We used univariate, bivariate, and multivariate exploratory data analysis (EDA) methodologies in a comprehensive manner to properly analyze the data. Let's dive into our analysis.
 
-### Jupyter Notebook
+### Objective: To explore and analyze the impact of numeric attributes on house prices in King County.
 
-Recall that the Jupyter Notebook is a notebook that uses Python and Markdown to present your analysis to a ***data science audience***. You will submit the notebook in PDF format on Canvas as well as in `.ipynb` format in your GitHub repository.
+A crucial turning point in our investigation occurs during the data analysis stage, which enables us to extract significant patterns and insights from the compiled dataset. We used univariate, bivariate, and multivariate exploratory data analysis (EDA) methodologies in a comprehensive manner to properly analyze the data. Let's dive into our analysis.
 
-The graded elements for the Jupyter Notebook are:
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/2b59ee47-af1e-4c4c-8374-34eef796cf7d)
 
-* Business Understanding
-* Data Understanding
-* Data Preparation
-* **Modeling**
-* **Regression Results**
-* Code Quality
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/7a0f0fc8-9148-4d4a-9abb-b2fde622f706)
 
-### GitHub Repository
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/4a48f3c9-bfff-4813-84d0-03af8e156f82)
 
-Recall that the GitHub repository is the cloud-hosted directory containing all of your project files as well as their version history.
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/c0c7f383-9151-4448-81c9-6ebb1f256dc6)
 
-The requirements are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#github-repository), except for the required sections in the `README.md`.
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/724a0983-ed6e-4320-95b5-37e40f757b03)
 
-For this project, the `README.md` file should contain:
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/8e59ea59-5371-4ed2-96d3-3bb5f7a927b8)
 
-* Overview
-* Business and Data Understanding
-  * Explain your stakeholder audience here
-* **Modeling**
-* **Regression Results**
-* Conclusion
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/a3906ad2-2fd7-4067-879f-c5fc0e684ee9)
 
-Just like in Phase 1, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/b3460de1-fbad-4820-a0ef-81a96c483892)
 
-## Grading
+The above histograms provide concise representation of how data is spread across different values and helps reveal underlying patterns.
+For the mentioned columns – ‘price’, ‘bedroom’, ‘bathrooms’, ‘sqft_living’, ‘sqft_above’ and ‘sqft_basement’. The key observation is that these histograms exhibit a right-skewed pattern, as most of the values are concentrated on the left side with a tail extending to the right. This skewness indicates that, for these attributes, the majority of properties fall within a specific range or have certain characteristics, but there are relatively few properties with exceptionally high values.
+This information is essential for understanding the price distribution and the distribution of other property characteristics. It guides the project's analysis and decision-making, particularly when dealing with properties that deviate from the norm in terms of pricing and attribute values. 
 
-***To pass this project, you must pass each project rubric objective.*** The project rubric objectives for Phase 2 are:
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/22e233ce-e1cc-4cf1-8722-8cb4975ece6f)
 
-1. Attention to Detail
-2. Statistical Communication
-3. Data Preparation Fundamentals
-4. Linear Modeling
+A scatter plot’s primary purpose is to provide a clear and concise representation of how two numeric variables interact with each other, which can help uncover patterns, correlations, or anomalies in the data.
+In the context of this project, scatter plots are utilized to examine the relationships between the ‘price’ (target variable) and various attributes such as ‘bathrooms’, ‘sqft_living’, ‘sqft_above’, ‘sqft_basement’, ‘bedroom’, ‘sqft_lot’, and  ‘floors’. Here's how are the observations related to these columns using scatter plots in relation to price:
+1. **Bathrooms, Sqft Living, Sqft Above, Sqft Basement with Price:**
+   Scatter plots for these attributes in relation to price reveal a linear correlation. As the number of bathrooms, the square footage of living space, the square footage above ground, or the square footage of the basement increases, there is a corresponding increase in the property price. This indicates a positive linear relationship, suggesting that these attributes have a direct impact on the pricing of houses.
+2. **Bedroom and Sqft Lot with Price:**
+   In contrast, scatter plots for the bedroom count and square footage of the lot in relation to price show a different pattern. These attributes are more clustered around a specific range and do not portray a clear linear relationship with price. This suggests that, for these attributes, there may be other factors influencing pricing, and they are not as directly correlated with the price.
+3. **Floors with Price:**
+   When examining the number of floors in relation to price, the scatter plot may reveal distinct clusters that resemble straight vertical lines. This indicates that the number of floors is a discrete variable, and there are specific price points associated with each discrete value of the floors. It provides insights into how the property prices are influenced by the discrete nature of the floors attribute.
 
-### Attention to Detail
+Scatter plots serve as a valuable visual aid to quickly identify and understand the relationships between different attributes and the target variable (price). They help in making informed decisions and exploring the impact of each attribute on house prices, whether it's a linear correlation, clustering, or discrete values.
 
-Just like in Phase 1, this rubric objective is based on your completion of checklist items. ***In Phase 2, you need to complete 70% (7 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
+### Objective: To investigate the influence of categorical attributes on house prices.
 
-**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 2 THAN IT WAS IN PHASE 1!**
+Count plots enable us to quickly discern the prevalence of different values in the dataset. This information aids in understanding the distribution of categorical data in the following  columns– ‘waterfront’, ‘view’, ‘condition’, ‘grade’, ‘season’ and ‘house_age_lv’ to identify class imbalances, selecting relevant features for modeling, making comparisons across categories, and extracting valuable insights from the data.
 
-The standard will increase with each Phase, until you will be required to complete all elements to pass Phase 5 (Capstone).
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/6be5dd24-7d99-437f-9e36-dab565a41537)
 
-#### Exceeds Objective
+Many houses in the dataset have waterfront locations, indicating a strong appeal for waterside properties.
+A significant portion of houses in the dataset lacks impressive views, suggesting that it may not be a prevalent feature.
+Houses in average condition are numerous, indicating a balance between well-maintained and less well-maintained properties.
+Houses with an average grade of 7 are prevalent, possibly indicating a standard level of construction and design.
+A substantial number of houses were sold in the spring, reflecting a season of increased real estate activity.
+The dataset predominantly contains older houses, highlighting the longevity of certain properties within King County.
 
-80% or more of the project checklist items are complete
+We plotted a bar graph to compare the different categorical columns to the mean prices and here’s the observation: 
 
-#### Meets Objective (Passing Bar)
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/df4887b3-82a6-4013-9aa8-8ac9a16dfca6)
 
-70% of the project checklist items are complete
+Houses located on waterfront properties fetched higher prices compared to those without waterfront views, underscoring the premium associated with waterside locations.
+Properties with an excellent view commanded higher sale prices compared to those without exceptional views, highlighting the value of scenic vistas in the real estate market.
+Houses in very good condition were sold at higher prices, suggesting that well-maintained homes are more desirable to buyers.
+Homes with a grade rating of 13, indicative of mansion-level construction and design, were associated with higher sale prices.
+Houses sold in the spring season generally commanded higher prices, possibly reflecting increased real estate activity during this time.
+Newer houses were sold at higher prices, indicating that buyers are willing to pay a premium for recently constructed properties.
 
-#### Approaching Objective
+A heatmap was utilized to determine which feature exhibits the highest correlation with the target variable, 'price.' The analysis revealed that the 'sqft_living' column possesses the most substantial correlation of the price, indicating that it is a strong candidate to be the independent variable in the baseline model. 
 
-60% of the project checklist items are complete
+![download](https://github.com/Kelvin-Rotich824/dsc-phase-2-project-v2-3/assets/141912522/65199195-05ac-4213-8a87-494fabf33fb1)
 
-#### Does Not Meet Objective
+## MODELLING
+In our modeling phase, we are embarking on the exciting journey of creating a predictive model for house prices in King County, Washington. Our journey begins with a key observation from the correlation matrix: the 'sqft_living' column exhibits the highest correlation with the target variable, 'price.' As a result, we have chosen 'sqft_living' as our predictor variable for the baseline model. This selection is grounded in the strong positive correlation that 'sqft_living' shares with the price, signifying its potential as a powerful predictor of house prices. Our modeling endeavors will build upon this insight to construct a robust and effective predictive model that can provide accurate and valuable pricing recommendations for both homeowners and real estate stakeholders. 
 
-50% or fewer of the project checklist items are complete
+### Baseline Model Summary
+Based on the results of our baseline model, it's evident that the predictive power of the 'sqft_living' column alone is limited. The baseline model suggests that only about 49% of the variance in house prices is accounted for by the square footage of living space ('sqft_living'). While this initial model is a good starting point, it falls short of providing accurate price predictions. Therefore, our strategy is to enhance the model's predictive capability by introducing additional features. This approach aims to capture a more comprehensive set of attributes that influence house prices in King County, thus improving the model's accuracy and usefulness.
 
-### Statistical Communication
+### Second Model Summary
+In the second model, we have made significant improvements. This model is statistically significant, as indicated by the F-statistic p-value being less than 0.05, and it can explain approximately 50.96% of the variance in sales prices.
+One limitation of the second model is that some of the p-values associated with the coefficients were found to be insignificant. Therefore, these coefficients might not be contributing significantly to the model's predictive power. To address this limitation and refine the model, further steps are required. These steps may include  standardization and incorporate categorical columns, which can provide a more comprehensive understanding of the housing market and lead to even more accurate predictions. 
 
-Recall that communication is one of the key data science "soft skills". In Phase 2, we are specifically focused on Statistical Communication. We define Statistical Communication as:
+## Third Model Summary
+The third model demonstrates high statistical significance with a very low F-statistic p-value of 0.0, indicating its overall robustness.This model has the ability to explain approximately 66.7% of the variance in house prices. This represents a substantial improvement in predictive power compared to earlier models.To ensure the robustness of our upcoming model, we recognized the importance of addressing multicollinearity by dropping highly correlated features. The forthcoming model, with its refined set of predictors, is poised to offer improved insights into the determinants of house prices. 
 
-> Communicating **results of statistical analyses** to diverse audiences via writing and live presentation
+## Fourth Model Summary
+The fourth model represents a significant improvement in addressing multicollinearity, as we decided to drop the highly correlated columns, 'sqft_living15' and 'sqft_above'. This strategic move results in a more robust model, offering an enhanced understanding of the independent effects of our predictor variables. The model's R-squared value has maintained the same percentage of approximately 66.5% of the variance in house prices.
 
-Note that this is the same as in Phase 1, except we are replacing "basic data analysis" with "statistical analyses".
+## Final Model Summary
+Here's a summary of the model results:
 
-High-quality Statistical Communication includes rationale, results, limitations, and recommendations:
+Dependent Variable: Price
+R-squared: 0.665
+Adj. R-squared: 0.665
+F-statistic: 2254.0
+Prob (F-statistic): 0.00
 
-* **Rationale:** Explaining why you are using statistical analyses rather than basic data analysis
-  * For example, why are you using regression coefficients rather than just a graph?
-  * What about the problem or data is suitable for this form of analysis?
-  * For a data science audience, this includes your reasoning for the changes you applied while iterating between models.
-* **Results:** Describing the overall model metrics and feature coefficients
-  * You need at least one overall model metric (e.g. r-squared or RMSE) and at least two feature coefficients.
-  * For a business audience, make sure you connect any metrics to real-world implications. You do not need to get into the details of how linear regression works.
-  * For a data science audience, you don't need to explain what a metric is, but make sure you explain why you chose that particular one.
-* **Limitations:** Identifying the limitations and/or uncertainty present in your analysis
-  * This could include p-values/alpha values, confidence intervals, assumptions of linear regression, missing data, etc.
-  * In general, this should be more in-depth for a data science audience and more surface-level for a business audience.
-* **Recommendations:** Interpreting the model results and limitations in the context of the business problem
-  * What should stakeholders _do_ with this information?
+### Model Coefficients: 
+In the regression summary provided, the constant term (const) has a coefficient of about $837,157, which represents the expected sale price of an average house when all other predictor variables are also average.
+‘bedrooms’: Each additional bedroom is associated with a decrease of approximately $25,780 in the sale price.
+‘bathrooms’: Each additional bathroom contributes around $37,160 to the sale price.
+‘sqft_living: An extra square foot of living space increases the sale price by roughly $122,000.
+‘floors’: Each additional floor adds approximately $25,490 to the sale price.
+‘sqft_basement’:  More square footage of basement space increases the sale price by about $21,050.
+‘sqft_lot15’: An increase of 1 square foot in the lot size is associated with a decrease of roughly $12,970 in the sale price.
+‘waterfront_YES’: Houses with a waterfront view are priced significantly higher, with an increase of about $722,000.
+ ‘house_age_lv_New’: Newer houses are priced around $65,200 lower than middle-aged houses on average.
+‘house_age_lv_Old’: Older houses are priced approximately $159,300 higher than middle-aged houses on average.
+Grade Categories (11 Excellent, 12 Luxury, 13 Mansion, 3 Poor, 4 Low, 5 Fair, 6 Low Average, 7 Average, 8 Good, 9 Better): Higher-grade categories lead to higher sale prices.
+  
+### Model Evaluation
+R-squared (R²): An R-squared of 0.665 suggests that approximately 66.5% of the variance in house prices is explained by the model. In other words, the model captures 66.5% of the variability in house prices based on the included features.
 
-#### Exceeds Objective
+Adjusted R-squared (Adj. R²): An adjusted R-squared of 0.665 in this model suggests that the explanatory variables still account for about 66.5% of the variance while adjusting for the model's complexity.
 
-Communicates the rationale, results, limitations, and specific recommendations of statistical analyses
+F-statistic: In this case, the F-statistic is 2254.0, which is a high value. A high F-statistic implies that the model is statistically significant, indicating that at least one of the independent variables has a significant effect on the dependent variable.
 
-> See above for extended explanations of these terms.
+Prob (F-statistic): A very low p-value (in this case, 0.00) suggests that the overall model is statistically significant.
 
-#### Meets Objective (Passing Bar)
+In summary, this regression model explains a substantial portion of the variance in house prices (R-squared) and is statistically significant (F-statistic). It indicates that the included features are valuable in predicting house prices.
 
-Successfully communicates the results of statistical analyses without any major errors
+Key predictors, including the number of bedrooms, bathrooms, living space, floors, basement space, and waterfront view, emerge as influential drivers of house prices. Grade and house age also exhibit substantial impacts on pricing. In particular, having a waterfront view significantly increases house prices, with an approximate increment of $722,000.
 
-> The minimum requirement is to communicate the _results_, meaning at least one overall model metric (e.g. r-squared or RMSE) as well as at least two feature coefficients. See the Approaching Objective section for an explanation of what a "major error" means.
+The model demonstrates its capability to make reasonably accurate predictions, with a Mean Absolute Error (MAE) of around $140,537 and a Root Mean Square Error (RMSE) of approximately $212,637. These metrics validate the model's effectiveness in estimating house prices and its potential utility for real estate professionals and stakeholders operating in the dynamic King County market.
 
-#### Approaching Objective
+## CONCLUSION
 
-Communicates the results of statistical analyses with at least one major error
+In conclusion, several key factors significantly influence house prices in King County, Washington:
 
-> A major error means that some aspect of your explanation is fundamentally incorrect. For example, if a feature coefficient is negative and you say that an increase in that feature results in an increase of the target, that would be a major error. Another example would be if you say that the feature with the highest coefficient is the "most statistically significant" while ignoring the p-value. One more example would be reporting a coefficient that is not statistically significant, rather than saying "no statistically significant linear relationship was found"
+Waterfront: Homes with a waterfront view have the most substantial positive impact on their prices. This feature is highly desirable and commands a premium.
 
-> "**If a coefficient's t-statistic is not significant, don't interpret it at all.** You can't be sure that the value of the corresponding parameter in the underlying regression model isn't really zero." _DeVeaux, Velleman, and Bock (2012), Stats: Data and Models, 3rd edition, pg. 801_. Check out [this website](https://web.ma.utexas.edu/users/mks/statmistakes/TOC.html) for extensive additional examples of mistakes using statistics.
+House Grade: The quality and grade of the house play a crucial role in determining its price. Properties with higher grades, such as "Mansion" and "Luxury," have significantly higher values. Quality construction and design are valued by buyers.
 
-> The easiest way to avoid making a major error is to have someone double-check your work. Reach out to peers on Slack and ask them to confirm whether your interpretation makes sense!
+Square Footage: More living space, including basements, has a positive effect on house prices. Larger homes tend to command higher values in the real estate market.
 
-#### Does Not Meet Objective
+Bathrooms and Floors: Additional bathrooms and floors in a house contribute positively to its price. These features offer convenience and comfort, which are reflected in the property's value.
 
-Does not communicate the results of statistical analyses
+Lot Size: Surprisingly, larger lot sizes, especially Lot 15, have a negative impact on prices. This suggests that smaller, more manageable lots are preferred and can even result in higher property values.
 
-> It is not sufficient to just display the entire results summary. You need to pull out at least one overall model metric (e.g. r-squared, RMSE) and at least two feature coefficients, and explain what those numbers mean.
+House Age: Older houses tend to be more expensive than newer ones. This might be due to historical or architectural significance associated with older properties. Buyers are willing to pay a premium for such houses.
 
-### Data Preparation Fundamentals
+Bedrooms: An increase in the number of bedrooms is associated with lower house prices. This finding may reflect buyer preferences, as larger homes with more bedrooms might cater to a different market segment.
 
-We define this objective as:
+Understanding these determinants is essential for both buyers and sellers in King County's real estate market. Buyers can make informed decisions about property features, while sellers can set appropriate prices based on their property's characteristics. It's also valuable information for real estate professionals and investors seeking to maximize returns and navigate this competitive market effectively.
 
-> Applying appropriate **preprocessing** and feature engineering steps to tabular data in preparation for statistical modeling
+## RECOMMENDATIONS
 
-The two most important components of preprocessing for the Phase 2 project are:
+Based on the analysis of house price determinants in King County, we offer the following recommendations for buyers, sellers, and real estate professionals:
 
-* **Handling Missing Values:** Missing values may be present in the features you want to use, either encoded as `NaN` or as some other value such as `"?"`. Before you can build a linear regression model, make sure you identify and address any missing values using techniques such as dropping or replacing data.
-* **Handling Non-Numeric Data:** A linear regression model needs all of the features to be numeric, not categorical. For this project, ***be sure to pick at least one non-numeric feature and try including it in a model.*** You can identify that a feature is currently non-numeric if the type is `object` when you run `.info()` on your dataframe. Once you have identified the non-numeric features, address them using techniques such as ordinal or one-hot (dummy) encoding.
+Prioritize Waterfront Properties: If you're a buyer looking for an investment or a dream home, consider waterfront properties. These offer not only a beautiful living environment but also a significant potential for property value appreciation.
 
-There is no single correct way to handle either of these situations! Use your best judgement to decide what to do, and be sure to explain your rationale in the Markdown of your notebook.
+Enhance House Quality: As a seller, focus on improving the quality of your property. Consider renovations or upgrades to increase the house grade, which will positively impact your selling price. Emphasize any unique design features or high-quality construction.
 
-Feature engineering is encouraged but not required for this project.
+Highlight Square Footage: When selling a property, make sure to highlight the square footage of the living space, including any basements. Potential buyers often place great importance on having enough space for their needs.
 
-#### Exceeds Objective
+Consider Additional Bathrooms and Floors: If you're planning to invest in a property, consider adding more bathrooms or additional floors to enhance its value. These features are attractive to many buyers and can result in a higher selling price.
 
-Goes above and beyond with data preparation, such as feature engineering or merging in outside datasets
+Optimize Lot Sizes: If you have a property with a larger lot size, consider the possibility of subdividing it into smaller, more manageable lots. Smaller lots, especially those similar in size to Lot 15, appear to be preferred in the market and can potentially lead to better prices.
 
-> One example of feature engineering could be using the `date` feature to create a new feature called `season`, which represents whether the home was sold in Spring, Summer, Fall, or Winter.
+Value Older Homes: Older homes often come with historical and architectural charm. Sellers can emphasize these unique features to attract buyers who appreciate the character and history of older properties.
 
-> One example of merging in outside datasets could be finding data based on ZIP Code, such as household income or walkability, and joining that data with the provided CSV.
+Optimize Bedroom Layouts: Be mindful of the number of bedrooms in a property. Consider how they are laid out and whether the layout is appealing. Effective bedroom design can help maintain property appeal and value.
 
-#### Meets Objective (Passing Bar)
+These recommendations take into account the key factors that influence house prices in King County. By considering these suggestions, buyers and sellers can make more informed decisions, and real estate professionals can better assist their clients in navigating this competitive real estate market.
 
-Successfully prepares data for modeling, including converting at least one non-numeric feature into ordinal or binary data and handling missing data as needed
+## LIMITATIONS
 
-> As a reminder, you can identify the non-numeric features by calling `.info()` on the dataframe and looking for type `object`.
+* Data Constraints: The analysis relies on available data, potentially missing critical variables.
 
-> Your final model does not necessarily need to include any features that were originally non-numeric, but you need to demonstrate your ability to handle this type of data.
+* External Variables: Economic shifts and government policies were excluded, which can affect the real estate market.
 
-#### Approaching Objective
+* Simplified Model: The model assumes linear relationships, neglecting potential nonlinear interactions.
 
-Prepares some data successfully, but is unable to utilize non-numeric data
+## NEXT STEPS
 
-> If you simply subset the dataframe to only columns with type `int64` or `float64`, your model will run, but you will not pass this objective.
+1. Incorporate Economic Indicators:** To enhance the accuracy of market trend predictions, consider integrating economic indicators into the model. Variables such as local employment rates, income levels, and interest rates can offer valuable insights into housing market dynamics.
 
-#### Does Not Meet Objective
+2. Advanced Predictive Models:** While the linear regression model has provided valuable insights, consider exploring advanced machine learning techniques such as gradient boosting and neural networks. These models can handle complex relationships and interactions within the data, potentially leading to more precise price forecasts.
 
-Does not prepare data for modeling
+By implementing these recommendations, stakeholders in the King County real estate market can further refine their models and decision-making processes, ultimately improving their ability to navigate this dynamic and competitive environment.
 
-### Linear Modeling
 
-According to [Kaggle's 2020 State of Data Science and Machine Learning Survey](https://www.kaggle.com/kaggle-survey-2020), linear and logistic regression are the most popular machine learning algorithms, used by 83.7% of data scientists. They are small, fast models compared to some of the models you will learn later, but have limitations in the kinds of relationships they are able to learn.
 
-In this project you are required to use linear regression as the primary statistical analysis, although you are free to use additional statistical techniques as appropriate.
 
-#### Exceeds Objective
 
-Goes above and beyond in the modeling process, such as recursive feature selection
 
-#### Meets Objective (Passing Bar)
 
-Successfully builds a baseline model as well as at least one iterated model, and correctly extracts insights from a final model without any major errors
 
-> We are looking for you to (1) create a baseline model, (2) iterate on that model, making adjustments that are supported by regression theory or by descriptive analysis of the data, and (3) select a final model and report on its metrics and coefficients
 
-> Ideally you would include written justifications for each model iteration, but at minimum the iterations must be _justifiable_
-
-> For an explanation of "major errors", see the description below
-
-#### Approaching Objective
-
-Builds multiple models with at least one major error
-
-> The number one major error to avoid is including the target as one of your features. For example, if the target is `price` you should NOT make a "price per square foot" feature, because that feature would not be available if you didn't already know the price.
-
-> Other examples of major errors include: using a target other than `price`, attempting only simple linear regression (not multiple linear regression), dropping multiple one-hot encoded columns without explaining the resulting baseline, or using a unique identifier (`id` in this dataset) as a feature.
-
-#### Does Not Meet Objective
-
-Does not build multiple linear regression models
-
-## Getting Started
-
-Please start by reviewing the contents of this project description. If you have any questions, please ask your instructor ASAP.
-
-Next, you will need to complete the [***Project Proposal***](#project_proposal) which must be reviewed by your instructor before you can continue with the project.
-
-Here are some suggestions for creating your GitHub repository:
-
-1. Fork the [Phase 2 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-2-project-v2-3), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-2. Or, create a new repository from scratch by going to [github.com/new](https://github.com/new) and copying the data files from the Phase 2 Project Repository into your new repository.
-   - Recall that you can refer to the [Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template) as an example structure
-   - This option will result in the most professional-looking portfolio repository, but can be more complicated to use. So if you are getting stuck with this option, try forking the project repository instead
-
-## Summary
-
-This is your first modeling project! Take what you have learned in Phase 2 to create a project with a more sophisticated analysis than you completed in Phase 1. You will build on these skills as we move into the predictive machine learning mindset in Phase 3. You've got this!
