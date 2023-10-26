@@ -35,10 +35,10 @@ The dataset can be found in the file *"kc_house_data.csv"* in the Data folder, i
 2. Dataset can be found in the file "kc_house_data.csv".
 3. Check requirements in Technologies section above and download libraries if necessary.
 
-## Data Wrangling
+## 1. Data Wrangling
 Here we will work on data cleaning, handling missing values, data transformation, handling duplicates, data reshaping and other processes to ensure that we have a clean, structured, and suitable format for analysis and modeling
 
-## Exploratory Data Analysis (EDA)
+## 2. Exploratory Data Analysis (EDA)
 Here we will explore the different features of the dataset to gain a better understanding of the data. We will use data vizualization to uncover trends and patterns. We will use Feature Engineering to create new features from existing ones and perform One-Hot Encoding on categorical variables that we will require for analysis.
 
 Most houses are priced around a half million to a million dollars,
@@ -50,7 +50,7 @@ while the most expensive houses imply the order of two million dollars and more
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
 
-## Simple Linear Regression Model
+## 3. Simple Linear Regression Model
 ### OLS Regression Results
 
 Here we have the outcome of an Ordinary Least Squares (OLS) linear regression analysis performed on a dataset with 'price' as the dependent variable and 'sqft_living' as the independent variable. 
@@ -61,7 +61,7 @@ Intercept The estimated value of 'price' when 'sqft_living' is 0. The coefficien
 sqft_living (Coefficient for sqft_living): approximately 283.1303.
 
 
-## Multiple Linear Regression Model
+## 4. Multiple Linear Regression Model
 RMSE is approximately 186,325.31.
 R-squared (R²) is approximately 0.719
 The high F-statistic value (6096) suggests that the model is statistically significant.
