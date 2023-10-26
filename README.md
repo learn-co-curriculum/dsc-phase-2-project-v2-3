@@ -3,7 +3,7 @@
 This multiple linear regression project was completed as part of Moringa School Data Science Bootcamp (Phase 2 Final Project).
 
 ## Problem statement
-Sometimes investors know how certain metrics and attributes affect house pricing, but they are not sure to what extent the metrics affect the pricing. Additionally, there are a combination of factors that affect the overall pricing of the houses. Unfortunately, the investors also cannot tell how the different combinations may affect the house pricing. They struggle to decide how much to price the houses based on the different combinations, and the random assumption may lead to overpricing or underpricing of the units
+Real estate developers encounter difficulties when assessing the precise influence of individual metrics and attributes on house pricing within the KC housing dataset. Their primary concern is the degree to which these factors interact to affect pricing outcomes. The current lack of clarity in pricing decisions can result in instances of both overpricing and underpricing of properties. And to address this issue, we aim to develop a more comprehensive understanding of the dataset's variables, enabling them to make more accurate pricing decisions based on a combination of factors.
 
 ## Components
 
@@ -45,6 +45,8 @@ Most houses are priced around a half million to a million dollars,
 while the most expensive houses imply the order of two million dollars and more
 
 **Overview of house features**
+- Categorical features of the house include `id`, `date`, `bedrooms`, `floors`, `waterfront`, `view`, `grade`, `year_built`, `yr_renovetd`, `zipcode`, `lat`, `long`.
+- Numerical variables include `price`, `sqft_living`, `sqft_lot`, `sqft_above`, `sqft_basement`, `sqft_basement`, `sqft_living_above`, `sqft_lot_below`.
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
 
@@ -61,7 +63,29 @@ sqft_living (Coefficient for sqft_living): approximately 283.1303.
 
 ## Multiple Linear Regression Model
 RMSE is approximately 186,325.31.
-R-squared (R²) is approximately 0.738
+R-squared (R²) is approximately 0.719
+The high F-statistic value (6096) suggests that the model is statistically significant.
+
+### Random Forest Regression Results
+The RMSE is 125,563 which is lower meaning the model is more accurate
+The R² is 88%
+
+## Contributors:
+|Name     |  GitHub   |
+|---------|-----------------|
+|Priscillah Wairimu |https://github.com/Wairimukimm|
+|---------|-----------------|
+|Lewis Kamindu |https://github.com/|
+|---------|-----------------|
+|Brian Chacha |https://github.com/|
+|---------|-----------------|
+|Meshael Oduor |https://github.com/|
+|---------|-----------------|
+|Lucy Waruguru |https://github.com/|
+|---------|-----------------|
+|Stephen Butiya |https://github.com/obystephen|
+
+
 
 
 
