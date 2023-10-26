@@ -1,4 +1,4 @@
-# Predicting House Prices
+# House Price Forecasting with Regression Modeling
 
 This multiple linear regression project was completed as part of Moringa School Data Science Bootcamp (Phase 2 Final Project).
 
