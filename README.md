@@ -7,7 +7,7 @@
 4.MARION JELIMO
 5.WILLIAM OMBALLA
 
- ![King County USA](https://github.com/celiajoyomiah/dsc-phase-2-project-v2-3/blob/main/Image.jpeg%100)
+ ![King County USA](https://github.com/celiajoyomiah/dsc-phase-2-project-v2-3/blob/main/Image.jpeg%60)
 
 ## OVERVIEW
 # BACKGROUND INFORMATION
