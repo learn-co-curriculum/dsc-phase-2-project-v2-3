@@ -1,12 +1,13 @@
 # House Price Forecasting with Regression Modeling
 
-This multiple linear regression project was completed as part of Moringa School Data Science Bootcamp (Phase 2 Final Project).
+![King County, Washington](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/main/king_county.jpeg)
+
 
 ## Problem statement
 Real estate developers encounter difficulties when assessing the precise influence of individual metrics and attributes on house pricing within the KC housing dataset. Their primary concern is the degree to which these factors interact to affect pricing outcomes. The current lack of clarity in pricing decisions can result in instances of both overpricing and underpricing of properties. And to address this issue, we aim to develop a more comprehensive understanding of the dataset's variables, enabling them to make more accurate pricing decisions based on a combination of factors.
 
-## PROJECT OVERVIEW
-The project focuses onthe creation of a machinelearning project for houseprice forecasting for allstakeholders involvedfrom investors to ownersto buyers.
+## PROJECT OVERVIEW 
+The project focuses on the creation of a machine-learning project for house-price forecasting for investors to owners to buyers.
 
 ## BUSINESS UNDERSTANDING
 House price forecasting is a crucial task in the real estate industry. Accurate predictions assist homebuyers, sellers, and investors in making informed decisions regarding property transactions.
