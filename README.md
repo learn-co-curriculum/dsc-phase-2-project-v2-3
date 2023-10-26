@@ -33,18 +33,12 @@ The objectives of the analysis on house sales in King County are as follows:
 These objectives purpose to use data analysis and linear regression modeling to benefit both homeowners and the real estate agency by providing actionable insights and recommendations for investment decisions.
 
 
-
-•	Handling outliers by analyzing and deciding whether to remove or transform outliers based on the context of the analysis. Outliers are data points that deviate significantly from the majority of the data. They can distort statistical measures and affect the model's generalization.
-•	Dealing with the categorical values in our dataset and whether they require One-Hot encoding. Machine learning models typically work with numeric data, so categorical variables need to be transformed into a numeric format. One-hot encoding is a common technique to convert categorical variables into a format that can be used in machine learning models. This ensures that the model can make sense of categorical data.
-•	Identifying the columns relevant to our problem. The irrelevant or redundant columns i.e., view, lat, long, yr_renovated were dropped. By dropping these columns, we aim to streamline our analysis and modeling efforts toward variables that are directly relevant to the estimation of home value.
-•	Converting data types to ensure that data types are consistent with the intended analysis by converting data to the appropriate data types (e.g., dates, units, integers, strings) and standardizing data formats to ensure that data is consistently formatted (e.g., date formats)
-
 ## DATA UNDERSTANDING
 The dataset used in this analysis is the King County House Sales dataset, sourced from Kaggle. It contains information about house sales in King County, including various features related to the properties and their sale prices. It comprises administrative data on over 21,000 house sales that occurred between May 2014 and May 2015. The data contains homes with different features which include prices, the number of bedrooms, the year the homes were built including the conditions of the homes.
 The dataset comprises 21597 rows and 21 columns. The columns come with descriptions found in separate column names datasets to help better understand the features.
 The data types in the dataset include integer, float, and object.
 
-#Data Preparation
+# Data Preparation
 This section involves getting the data ready for analysis and modeling.
 We started by inspecting the dataset to gain an understanding of its structure and content
 Preparation of the data involved;
