@@ -74,15 +74,10 @@ The R² is 88%
 |Name     |  GitHub   |
 |---------|-----------------|
 |Priscillah Wairimu |https://github.com/Wairimukimm|
-|---------|-----------------|
 |Lewis Kamindu |https://github.com/|
-|---------|-----------------|
 |Brian Chacha |https://github.com/|
-|---------|-----------------|
 |Meshael Oduor |https://github.com/|
-|---------|-----------------|
 |Lucy Waruguru |https://github.com/|
-|---------|-----------------|
 |Stephen Butiya |https://github.com/obystephen|
 
 
