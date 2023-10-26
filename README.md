@@ -55,20 +55,22 @@ while the most expensive houses imply the order of two million dollars and more
 
 Here we have the outcome of an Ordinary Least Squares (OLS) linear regression analysis performed on a dataset with 'price' as the dependent variable and 'sqft_living' as the independent variable. 
 
-R² is approximately 0.495
-F-Statistic the high value (1.868e+04) suggests that the model is statistically significant.
-Intercept The estimated value of 'price' when 'sqft_living' is 0. The coefficient is approximately -47,430.
-sqft_living (Coefficient for sqft_living): approximately 283.1303.
+- R² is approximately 0.495
+- F-Statistic the high value (1.868e+04) suggests that the model is statistically significant.
+- Intercept: The estimated value of 'price' when 'sqft_living' is 0. The coefficient is approximately -47,430.
+- sqft_living (Coefficient for sqft_living): approximately 283.1303.
 
 
 ## 4. Multiple Linear Regression Model
-RMSE is approximately 186,325.31.
-R-squared (R²) is approximately 0.719
-The high F-statistic value (6096) suggests that the model is statistically significant.
+- RMSE is approximately 186,325.31.
+- R-squared (R²) is approximately 0.719
+- The high F-statistic value (6096) suggests that the model is statistically significant.
 
 ### Random Forest Regression Results
-The RMSE is 125,563 which is lower meaning the model is more accurate
-The R² is 88%
+- The RMSE is 125,563 which is lower meaning the model is more accurate
+- The R² is 88%
+
+
 
 ## Contributors:
 |Name     |  GitHub   |
