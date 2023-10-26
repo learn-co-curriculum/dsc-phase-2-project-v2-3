@@ -253,7 +253,7 @@ Optimize Bedroom Layouts: Be mindful of the number of bedrooms in a property. Co
 
 These recommendations take into account the key factors that influence house prices in King County. By considering these suggestions, buyers and sellers can make more informed decisions, and real estate professionals can better assist their clients in navigating this competitive real estate market.
 
-LIMITATIONS
+## LIMITATIONS
 
 * Data Constraints: The analysis relies on available data, potentially missing critical variables.
 
@@ -261,7 +261,7 @@ LIMITATIONS
 
 * Simplified Model: The model assumes linear relationships, neglecting potential nonlinear interactions.
 
-NEXT STEPS
+## NEXT STEPS
 
 1. Incorporate Economic Indicators:** To enhance the accuracy of market trend predictions, consider integrating economic indicators into the model. Variables such as local employment rates, income levels, and interest rates can offer valuable insights into housing market dynamics.
 
