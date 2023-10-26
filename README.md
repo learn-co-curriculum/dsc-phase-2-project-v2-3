@@ -24,16 +24,11 @@ The Real Estate Agency needs to offer effective guidance for prospective home se
 
 # OBJECTIVES
 The objectives of the analysis on house sales in King County are as follows:
-•	Identification of the house feature that is most highly correlated with price;
-I.	Relationship between house condition and price showing how it affects price.
-II.	Relationship of houses with a waterfront view or one without a waterfront view and its effect on prices.
-III.	Relationship of house area and its correlation with price.
-IV.	Relationship between price and the year of construction.
-V.	Prediction of prices using a list of house features.
-
-
-•	Identification of the house features that have the strongest correlation with other features;
-I.	Relationship between House Condition and Grade.
+•	To identify features that are highly related to price
+•	Find the relationship between th house area/sizes and the price
+•	Analyse how the price relates to the condition and grade
+•	Find the relationship between price and home features e.g: Bedrooms, bathrooms etc.
+•	To identify the relationship between price and location
 
 These objectives purpose to use data analysis and linear regression modeling to benefit both homeowners and the real estate agency by providing actionable insights and recommendations for investment decisions.
 
@@ -82,19 +77,16 @@ This plot shows how condition and price are related.
 
 ## RECOMMENDATIONS
 Based on the findings from our multiple linear regression analysis, we recommend that homeowners consider the following strategies for potentially increasing the estimated value of their homes:
-1.	Focus on Kitchen and Bathroom Renovations: Our analysis strongly suggests that investing in kitchen and bathroom renovations tends to have a significant positive impact on the estimated value of homes. Upgrading fixtures, modernizing appliances, and enhancing the overall aesthetics of these spaces can notably elevate the perceived value of a property.
 
-2.	 Prioritize Curb Appeal Enhancements: Improving the curb appeal of a property has proven to be an effective way to attract potential buyers and increase property value. Investing in landscaping, maintaining the exterior of the house, and ensuring a well-maintained appearance can make a substantial difference in the overall perception of the property.
+1. Expand Square Footage with Strategic Considerations: For homeowners considering expanding the square footage of their property, it is crucial to strategically plan the extension to ensure a seamless integration with the existing structure. Focus on creating functional and versatile spaces that align with the needs and preferences of potential buyers. Additionally, pay attention to optimizing the flow and overall layout of the expanded space to enhance the overall appeal and usability of the property.
 
+2. Emphasize Quality Construction in Renovation Projects: When undertaking construction or renovation projects, prioritize the use of high-quality materials and ensure adherence to superior construction standards. Emphasizing durability, energy efficiency, and modern design aesthetics can significantly contribute to the perceived value of the property. Engaging reputable contractors and adhering to industry best practices can help ensure that the construction work adds substantial value to the property.
 
-3.	 Consider Functional Space Utilization: Maximizing the use of available space, especially in the living areas, can significantly enhance the appeal of a home. Our analysis indicates that optimizing the utilization of existing square footage, without necessarily increasing it, can positively influence the estimated value of the property. Creating multipurpose spaces and ensuring a seamless flow throughout the house are key considerations.
+3. Explore the Impact of Additional Features on Property Value: Beyond square footage and bathrooms, consider the potential impact of additional features such as outdoor amenities, energy-efficient installations, and smart home technology. Conducting further analysis to understand the preferences and priorities of the target market can provide valuable insights into which features are most likely to enhance the property's appeal and value. Integrating sought-after features that align with current market trends can position the property competitively within the real estate market.
 
-4.	 Pay Attention to Interior Upgrades: Our analysis highlights that certain interior upgrades, such as flooring, lighting, and paint, contribute to the perceived value of a property. Implementing modern and neutral design choices, which appeal to a broader range of potential buyers, can help boost the estimated value of the home.
+4. Validate Model Assumptions with Additional Data: Given the constraints of the current model, it is essential to validate the assumptions and limitations by incorporating additional data from diverse geographical locations and housing markets. This process can help assess the model's robustness and applicability beyond the specific context of King County. Moreover, considering alternative modeling techniques and exploring advanced regression methodologies can offer a more comprehensive understanding of the housing market dynamics across different regions.
 
-
-5.	 Regular Maintenance and Upkeep: Ensuring regular maintenance and addressing any structural or functional issues promptly is crucial in maintaining and potentially increasing the value of a property. Regular inspections, timely repairs, and overall upkeep of the property demonstrate its long-term sustainability and desirability to potential buyers.
-
-It is important to note that the impact of each recommendation might vary depending on the specific characteristics of the property and the preferences of the target market. Homeowners should carefully consider their budget constraints, the local real estate market trends, and the specific needs and preferences of potential buyers when implementing these recommendations. Furthermore, consulting with experienced real estate professionals can provide valuable insights and guidance in making informed decisions regarding property renovations and enhancements.
+5. Account for Outliers in Predictive Analyses: In future analyses, it is advisable to handle outliers in the dataset with caution, considering their potential impact on the predictive accuracy of the model. Implementing robust techniques for outlier detection and handling can help improve the model's performance and ensure more reliable predictions, especially for properties with unique or exceptional characteristics. Regularly reassessing and updating the model with new data that reflects a diverse range of property values can enhance its predictive capabilities and relevance over time.
 
 
 
