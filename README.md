@@ -61,6 +61,14 @@ Multiple linear regression statistical technique was utilized to model the relat
 To attain our first objective, identifying the feature that is most highly correlated with price, the dependent variable was price, and the independent variables were house features that were influencing the pricing of the houses, which were house condition, absence or presence of a waterfront view, house area, and year of construction.
 Additionally, to provide information/insight on the expected increase in property value with regard to enhancing the above house features, we sought to establish a relationship between houses
 
+This graph shows the distribution of the data we have.
+![Distribution of the data](images/distributions.png)
+
+This plot explores the correlation between different features in our dataset.
+![Correlation Matrix](images/corr_matrix.png)
+
+This plot shows how condition and price are related.
+![Price and Condition](images/price_cond.png)
 
 
 
