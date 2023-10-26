@@ -48,7 +48,7 @@ while the most expensive houses imply the order of two million dollars and more
 - Categorical features of the house include `id`, `date`, `bedrooms`, `floors`, `waterfront`, `view`, `grade`, `year_built`, `yr_renovetd`, `zipcode`, `lat`, `long`.
 - Numerical variables include `price`, `sqft_living`, `sqft_lot`, `sqft_above`, `sqft_basement`, `sqft_basement`, `sqft_living_above`, `sqft_lot_below`.
 
-<img src="/Images/waterfront.PNG" >
+<img src="/Images/waterfront.PNG" width = "400" >
 
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
