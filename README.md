@@ -1,6 +1,6 @@
 # House Price Forecasting with Regression Modeling
 
-![King County, Washington](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/main/king_county.jpeg)
+![King County, Washington](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/tweaks/king_county.jpeg)
 
 
 ## Problem statement
