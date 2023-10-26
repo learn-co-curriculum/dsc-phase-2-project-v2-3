@@ -47,9 +47,6 @@ while the most expensive houses imply the order of two million dollars and more
 **Overview of house features**
 - Categorical features of the house include `id`, `date`, `bedrooms`, `floors`, `waterfront`, `view`, `grade`, `year_built`, `yr_renovetd`, `zipcode`, `lat`, `long`.
 - Numerical variables include `price`, `sqft_living`, `sqft_lot`, `sqft_above`, `sqft_basement`, `sqft_basement`, `sqft_living_above`, `sqft_lot_below`.
-
-<img src="/Images/waterfront.PNG" width = "400" >
-
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
 
@@ -79,10 +76,10 @@ Here we have the outcome of an Ordinary Least Squares (OLS) linear regression an
 |Name     |  GitHub   |
 |---------|-----------------|
 |Priscillah Wairimu |https://github.com/Wairimukimm|
-|Lewis Kamindu |https://github.com/|
-|Brian Chacha |https://github.com/|
-|Meshael Oduor |https://github.com/|
-|Lucy Waruguru |https://github.com/|
+|Lewis Kamindu |https://github.com/lewigi|
+|Brian Chacha |https://github.com/MarwaBrian|
+|Meshael Oduor |https://github.com/Ayangaoduor1|
+|Lucy Waruguru |https://github.com/WacekeW|
 |Stephen Butiya |https://github.com/obystephen|
 
 
