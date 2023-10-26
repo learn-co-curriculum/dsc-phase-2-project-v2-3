@@ -57,6 +57,9 @@ while the most expensive houses imply the order of two million dollars and more
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
 
+# How Location affects price
+From the visualisation above, houses around latitude 47.6 to 47.7 and longitude -122.0 to -122.5 have some of the highest prices.
+
 ## 3. Simple Linear Regression Model
 ### OLS Regression Results
 
