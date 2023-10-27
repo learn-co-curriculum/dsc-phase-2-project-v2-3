@@ -1,5 +1,5 @@
 ## NON-TECHNICAL PRESENTATION
-## KING COUNTY HOUSING PROJECT
+## KING COUNTY HOUSE SALES PROJECT
 ## GROUP MEMBERS
 1.ALLEN MAINA
 2.CYNTHIA KAREKO
@@ -30,7 +30,7 @@ The objectives of the analysis on house sales in King County are as follows:
 •	Find the relationship between price and home features e.g: Bedrooms, bathrooms etc.
 •	To identify the relationship between price and location
 
-These objectives purpose to use data analysis and linear regression modeling to benefit both homeowners and the real estate agency by providing actionable insights and recommendations for investment decisions.
+These objectives purpose to use data analysis and multiple regression modeling to benefit both homeowners and the real estate agency by providing actionable insights and recommendations for investment decisions.
 
 
 ## DATA UNDERSTANDING
