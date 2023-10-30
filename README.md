@@ -1,15 +1,15 @@
 # House Price Forecasting with Regression Modeling
 
-This multiple linear regression project was completed as part of Moringa School Data Science Bootcamp (Phase 2 Final Project).
+![King County, Washington](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/tweaks/king_county.webp)
 
-## Problem Statement
+
+## Problem statement
 Real estate developers encounter difficulties when assessing the precise influence of individual metrics and attributes on house pricing within the KC housing dataset. Their primary concern is the degree to which these factors interact to affect pricing outcomes. The current lack of clarity in pricing decisions can result in instances of both overpricing and underpricing of properties. And to address this issue, we aim to develop a more comprehensive understanding of the dataset's variables, enabling them to make more accurate pricing decisions based on a combination of factors.
 
+## PROJECT OVERVIEW 
+The project focuses on the creation of a machine-learning project for house-price forecasting for investors to owners to buyers.
 
-## Project Overview
-The project focuses onthe creation of a machinelearning project for houseprice forecasting for allstakeholders involvedfrom investors to ownersto buyers.
-
-## Business Understanding
+## BUSINESS UNDERSTANDING
 House price forecasting is a crucial task in the real estate industry. Accurate predictions assist homebuyers, sellers, and investors in making informed decisions regarding property transactions.
 
 ## Components
@@ -57,10 +57,6 @@ while the most expensive houses imply the order of two million dollars and more
 - it is can be noticed that as `bedrooms` increase, so does the house's selling price
 - more `floors`, preferably up to 2.5 have a higher price  
 
-## How Location affects price
-Houses around latitude 47.6 to 47.7 and longitude -122.0 to -122.5 have some of the highest prices.
-
-
 ## 3. Simple Linear Regression Model
 ### OLS Regression Results
 
@@ -83,7 +79,7 @@ Here we have the outcome of an Ordinary Least Squares (OLS) linear regression an
 - The R² is 88%
 
 
-## 5. Conclusions
+## Conclusions
 In conclusion, our predictive model accounts for approximately 72% of the variance in house prices which signifies a strong predictive power. The factors considered include, square footage, location, view and waterfront, which have a substantial impact on property values. It's important to keep in mind, however, that real estate is influenced by many more dynamic variables thus achieving 100% accuracy in predicting house prices is challenging. Our model’s performance is encouraging and can aid in estimating property values in King County thus providing a reliable method for both buyers and sellers. 
 Although this model is reliable, it should be used in conjunction with other information for more precise pricing decisions.
 
