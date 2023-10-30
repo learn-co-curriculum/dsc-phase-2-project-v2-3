@@ -70,17 +70,17 @@ Here we have the outcome of an Ordinary Least Squares (OLS) linear regression an
 
 ## 4. Multiple Linear Regression Model
 ### OLS Regression Results
-- RMSE is approximately 186,325.31.
-- R-squared (R²) is approximately 0.719
+- RMSE is approximately 200,639
+- R-squared (R²) is approximately 0.69
 - The high F-statistic value (6096) suggests that the model is statistically significant.
 
 ### Random Forest Regression Results
-- The RMSE is 125,563 which is lower meaning the model is more accurate
-- The R² is 88%
+- The RMSE is 127,472.58 which is lower meaning the model is more accurate
+- The R² is 87%
 
 
 ## Conclusions
-In conclusion, our predictive model accounts for approximately 72% of the variance in house prices which signifies a strong predictive power. The factors considered include, square footage, location, view and waterfront, which have a substantial impact on property values. It's important to keep in mind, however, that real estate is influenced by many more dynamic variables thus achieving 100% accuracy in predicting house prices is challenging. Our model’s performance is encouraging and can aid in estimating property values in King County thus providing a reliable method for both buyers and sellers. 
+In conclusion, our predictive model accounts for approximately 87% of the variance in house prices which signifies a strong predictive power. The factors considered include, square footage, location, view and waterfront, which have a substantial impact on property values. It's important to keep in mind, however, that real estate is influenced by many more dynamic variables thus achieving 100% accuracy in predicting house prices is challenging. Our model’s performance is encouraging and can aid in estimating property values in King County thus providing a reliable method for both buyers and sellers. 
 Although this model is reliable, it should be used in conjunction with other information for more precise pricing decisions.
 
 
