@@ -35,5 +35,8 @@ BUSINESS UNDERSTANDING
 METHODOLOGY
 
 RESULTS AND INTERPRATATION
+Based on the correlation matrix, and correlation heatmap, and the model results for the standardised data, squarefoot living variable is the sigle most signficant variable in affecting house prices, then followed by view based on our model.
+
+For house with average 'sqft_living', 'floors', 'condition', and 'view', the house price is about 540,500 dollars. A unit increase in square feet of sqft_living leads to a $253.5 increase in house price. While our models explain 54.3 percent of the variablity in house prices, its error increases with increasing shouse price as seen in the residual plot
 
 RECOMENDATIONS & CONCLISONS
