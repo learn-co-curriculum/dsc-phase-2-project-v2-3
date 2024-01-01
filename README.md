@@ -6,13 +6,16 @@ BUSINESS STAKEHOLDER
 Rittenhouse Brothers - Real Estate Flipping Company
 
 INTODUCTION
+
 This study aims to address the importance of identifying the factors that significantly influence home costs,Because conventional methods rely on anecdotal evidence or limited research, they often yield incorrect findings. This knowledge gap makes it more difficult for stakeholders to predict and assess changes in house prices. To solve this issue, we are using multiple regression modeling techniques to thoroughly analyze home sales data. Multiple regression is a useful tool for analyzing the relationship between different attributes and home sales prices since it takes into consideration the combined impact of several independent variables.
 
 
 PROBLEM STATEMENT
+
 Real estate valuation poses significant challenges for Rittenhouse Brothers, particularly when determining property values influenced by unique features and the impact of renovations or upgrades. The subjective nature of valuation, varying interprations among appraisers and professionals, and the absense of a purely objective methodology contribute to vakuation discrepancies.
 
 MAIN OBJECTIVE
+
 This Analysis aims to establish an objective property valuation model, focusing specifically on Property Unique features and the impact of renovations or upgrades. The primary goal is to minimize variations in valution estimates and provide Rittenhouse Brothers with a more standardized and reliable method for assessing property values.
 
 SPECIFIC OBJECTIVES
@@ -34,12 +37,17 @@ NOTEBOOK STRUCTURE
 3. Data Analysis
 4. Multiple Regression Modelling.
 5. Model Evaluation and Understanding
+   
+
 
 
 BUSINESS UNDERSTANDING
+
 The insights from regression analysis empower real estate professionals to grasp the forces behind house prices. This knowledge allows agents to refine price estimates, spotlight essential property features, and offer knowledgeable advice to clients. Similarly, homeowners and sellers can utilize this analysis to appraise their property's potential worth. Understanding influential features helps them gauge the impact of enhancements on property value, guiding their decisions on pricing and marketing tactics.
 
+
 DATA UNDERSTANDING
+
 The dataset used here contains housing-related information, encompassing variables like date, square footage above ground level (sqft_above), property view indicators, and basement square footage (sqft_basement). An exploratory analysis will examine missing values, validate data types, identify outliers, and extract pivotal features for analysis. This process aims to thoroughly comprehend the dataset's intricacies, laying the groundwork for a comprehensive understanding of factors influencing housing prices. Through meticulous scrutiny, this analysis endeavors to ensure data integrity, facilitate informed decision-making, and enable accurate modeling in the realm of housing price determination.
 
 METHODOLOGY
