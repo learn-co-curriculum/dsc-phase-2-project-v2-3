@@ -57,6 +57,6 @@ Based on the correlation matrix, correlation heatmap, and the model results for 
 For houses with an average 'sqft_living', 'floors', 'condition', and 'view', the house price is about 540,500 dollars. A unit increase in square feet of sqft_living leads to a $253.5 increase in house price. While our models explain 54.3 percent of the variability in house prices, its error increases with increasing house prices as seen in the residual plot
 
 ## RECOMENDATIONS & CONCLUSIONS
-1. Further to no.3 above, more analysis is required to show how the geographical location of a house affects its price
+1.  More analysis is required to show how the geographical location of a house affects its price
 2. Ways to improve the accuracy, especially for high-value homes, so we can provide even more reliable estimates across the entire range of house prices are needed.
 3. Market Segmentation: To determine market segmentation or particular buyer preferences, examine the link between the independent factors and housing prices. For example, a market sector of luxury or high-end homes may be indicated if the prices of houses tend to be higher.
