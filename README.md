@@ -12,11 +12,11 @@ This study aims to address the importance of identifying the factors that signif
 
 PROBLEM STATEMENT
 
-Real estate valuation poses significant challenges for Rittenhouse Brothers, particularly when determining property values influenced by unique features and the impact of renovations or upgrades. The subjective nature of valuation, varying interprations among appraisers and professionals, and the absense of a purely objective methodology contribute to vakuation discrepancies.
+Real estate valuation poses significant challenges for Rittenhouse Brothers, particularly when determining property values influenced by unique features and the impact of renovations or upgrades. The subjective nature of valuation, varying interpretations among appraisers and professionals, and the absence of a purely objective methodology contribute to valuation discrepancies.
 
 MAIN OBJECTIVE
 
-This Analysis aims to establish an objective property valuation model, focusing specifically on Property Unique features and the impact of renovations or upgrades. The primary goal is to minimize variations in valution estimates and provide Rittenhouse Brothers with a more standardized and reliable method for assessing property values.
+This Analysis aims to establish an objective property valuation model, focusing specifically on Property's Unique features and the impact of renovations or upgrades. The primary goal is to minimize variations in valuation estimates and provide Rittenhouse Brothers with a more standardized and reliable method for assessing property values.
 
 SPECIFIC OBJECTIVES
 
@@ -24,7 +24,7 @@ Perform exploratory data analysis to uncover connections between various variabl
 
 Create a multiple regression model to forecast house sale prices by taking into account chosen independent variables and examining their influence on the dependent variable. Validate the model assumptions, evaluate its fitness for the data, and refine the model as needed.
 
-Analyze the coefficients of the independent variables within the model to discern their individual contributions to house prices. Identify the most impactful factors influencing house sale prices and delineate their respective effects.
+Analyze the coefficients of the independent variables within the model to discern their contributions to house prices. Identify the most impactful factors influencing house sale prices and delineate their respective effects.
 
 Assess and confirm the efficacy of the model.
 
@@ -56,8 +56,11 @@ The methodology lays out a clear plan to analyze using multiple regression model
 
 RESULTS AND INTERPRETATION
 
-Based on the correlation matrix, and correlation heatmap, and the model results for the standardised data, squarefoot living variable is the single most significant variable in affecting house prices, then followed by view based on our model.
+Based on the correlation matrix, and correlation heatmap, and the model results for the standardized data, square foot living variable is the single most significant variable in affecting house prices, then followed by view based on our model.
 
-For house with average 'sqft_living', 'floors', 'condition', and 'view', the house price is about 540,500 dollars. A unit increase in square feet of sqft_living leads to a $253.5 increase in house price. While our models explain 54.3 percent of the variablity in house prices, its error increases with increasing shouse price as seen in the residual plot
+For houses with an average 'sqft_living', 'floors', 'condition', and 'view', the house price is about 540,500 dollars. A unit increase in square feet of sqft_living leads to a $253.5 increase in house price. While our models explain 54.3 percent of the variablity in house prices, its error increases with increasing house price as seen in the residual plot
 
 RECOMENDATIONS & CONCLUSIONS
+1. Further to no.3 above, more analysis is required to show how the geographical location of a house affects its price
+2. Ways to improve the accuracy, especially for high-value homes, so we can provide even more reliable estimates across the entire range of house prices is needed.
+3. Market Segmentation: To determine market segmentation or particular buyer preferences, examine the link between the independent factors and housing prices. For example, a market sector of luxury or high-end homes may be indicated if the prices of houses tend to be higher.
