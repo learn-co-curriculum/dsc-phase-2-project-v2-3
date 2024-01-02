@@ -1,5 +1,5 @@
 ## Kings County Real Estate Insights House-Sales-Prices-Analysis-Using-Multi-Linear-Regression
-
+![WhatsApp Image 2024-01-02 at 8 49 28 PM](https://github.com/Rgmoogachiri/dsc-phase-2-project-v2-3/assets/45751215/c526c43b-b8c9-4622-a078-68cc4bb0678a)
 
 ## BUSINESS STAKEHOLDER
 ### Rittenhouse Brothers - Real Estate Flipping Company
